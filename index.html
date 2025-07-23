@@ -1,23 +1,64 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Afton Gauntlett Resume</title>
+    <link rel="icon" href="fav.ico" type="image/x-icon" />
+
     <style>
+      :root {
+        --bg-light: #f9f9f9;
+        --bg-dark: #121212;
+        --text-light: #1a1a1a;
+        --text-dark: #f0f0f0;
+        --accent: #3178c6;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: var(--bg-dark);
+          color: var(--text-dark);
+        }
+        a {
+          color: var(--accent);
+        }
+      }
+
+      @media (prefers-color-scheme: light) {
+        body {
+          background-color: var(--bg-light);
+          color: var(--text-light);
+        }
+        a {
+          color: var(--accent);
+        }
+      }
+
       body {
-        font-family: sans-serif;
+        font-family: system-ui, sans-serif;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 4rem;
+        min-height: 100vh;
+        margin: 0;
+        padding: 2rem;
+        text-align: center;
       }
+
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+
       a {
-        font-size: 1.25rem;
-        color: #3178c6;
+        font-size: 1.2rem;
         text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
       }
     </style>
   </head>
