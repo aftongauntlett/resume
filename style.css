@@ -1,0 +1,207 @@
+/* Roboto font faces */
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --text: #1a1a1a;
+  --muted: #444;
+  --subtle: #666;
+  --rule: #2e2e2e;
+}
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Helvetica, Arial, sans-serif;
+  font-size: 10pt;
+  line-height: 1.5;
+  color: var(--text);
+  background: #fff;
+}
+
+.page {
+  width: 8.5in;
+  margin: 0 auto;
+  padding: 0.25in 0.2in;
+  background: #fff;
+}
+@page {
+  size: A4;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: var(--muted);
+}
+
+.header {
+  margin-bottom: 0.9rem;
+  padding-bottom: 0.45rem;
+}
+.name-title {
+  font-size: 22pt;
+  font-weight: 700;
+  color: #111;
+  margin: 0 0 0.2rem 0;
+}
+.name-title .title {
+  font-size: 12pt;
+  font-weight: 500;
+  color: var(--muted);
+  margin-left: 0.4rem;
+}
+.contact {
+  font-size: 9.5pt;
+  color: #333;
+  line-height: 1.4;
+}
+.contact-divider {
+  margin: 0 0.35rem;
+  color: #888;
+}
+
+.section {
+  margin: 0 0 1rem 0;
+  page-break-inside: avoid;
+}
+.section-title {
+  page-break-after: avoid;
+  font-size: 11.5pt;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #111;
+  margin: 0 0 0.5rem 0;
+  border-bottom: 2px solid var(--rule);
+  padding-bottom: 0.2rem;
+}
+.summary {
+  font-size: 10pt;
+  line-height: 1.6;
+  color: #222;
+}
+
+/* Shared entry layout (Experience, Education, Awards, Projects) */
+.entry-item {
+  margin-bottom: 1rem;
+}
+.entry-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.15rem;
+}
+.entry-title {
+  font-size: 10.5pt;
+  font-weight: 600;
+  color: #111;
+}
+.entry-meta {
+  font-size: 9pt;
+  color: var(--subtle);
+  white-space: nowrap;
+}
+.entry-desc {
+  font-size: 9.5pt;
+  color: #222;
+}
+
+/* Experience roles */
+.roles-block {
+  margin-left: 1rem;
+}
+.roles-block .entry-title {
+  font-weight: 500;
+}
+.bullets {
+  margin: 0.25rem 0 0.6rem 1.1rem;
+  padding: 0;
+}
+.bullets > li {
+  margin-bottom: 0.22rem;
+  font-size: 9.5pt;
+}
+
+/* Skills grid */
+.section.skills {
+  page-break-inside: auto;
+}
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem 1rem;
+  page-break-inside: avoid;
+}
+.skill-category {
+  margin-bottom: 0.2rem;
+}
+.skill-heading {
+  font-size: 10pt;
+  font-weight: 600;
+  color: #111;
+  margin: 0 0 0.2rem;
+}
+.skill-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.skill-list li {
+  font-size: 9.5pt;
+  line-height: 1.4;
+  margin: 0 0 0.18rem 0;
+}
+
+/* Page break utility (only if explicitly added in template) */
+.page-break {
+  page-break-before: always;
+}
