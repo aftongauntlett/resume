@@ -1,0 +1,136 @@
+{
+  "personal": {
+    "name": "Afton Gauntlett",
+    "title": "Frontend Developer",
+    "email": "hello@aftongauntlett.com",
+    "phone": "(571) 249-1952",
+    "location": "Ashburn, VA 20147",
+    "linkedin": "",
+    "github": "",
+    "website": "aftongauntlett.com"
+  },
+  "summary": "Frontend Developer with 6+ years of experience leading UI work on large, production platforms. I've owned frontend architecture, guided interface decisions, and shipped complex applications used across distributed teams. AI-assisted and agentic development are central to how I build now, using Claude, GitHub Copilot Pro+, and multi-agent tooling to accelerate development, write architecture docs, and maintain consistent code quality. My background spans enterprise systems and custom products, with a consistent focus on interface quality that holds up as software scales.",
+  "experience": [
+    {
+      "company": "Booz Allen Hamilton",
+      "positions": [
+        {
+          "title": "Lead Engineer",
+          "dates": "03/2023 - 05/2025",
+          "bullets": [
+            "Led frontend architecture for multiple production applications, introducing Storybook and shared frontend patterns that improved consistency and reduced redundant UI work as systems scaled.",
+            "Built a secure, air-gapped LLM-powered chatbot that automated onboarding and daily AI-assisted workflows, getting new team members productive faster through guided VS Code scripting and contextual documentation. Authored internal AI-assisted workflows that enabled the team to use the chatbot for code assistance under strict compliance constraints.",
+            "Designed and delivered a stepper-driven data portal to replace a manual Excel and email process, streamlining a previously error-prone workflow, reducing support tickets, and strengthening the proposal against competing bids on a high-value contract.",
+            "Worked with stakeholders and designers early in the process, using Figma-based workflows and lightweight prototypes to shape interaction and layout decisions before writing large amounts of code."
+          ]
+        },
+        {
+          "title": "Software Engineer",
+          "dates": "03/2022 - 03/2023",
+          "bullets": [
+            "Rebuilt and modernized large frontend surfaces by migrating legacy Angular-based interfaces to React, improving structure, readability, and long-term maintainability.",
+            "Implemented complex dashboard views and workflow-driven UIs by integrating backend APIs into custom frontend components rather than relying on embedded third-party tools.",
+            "Partnered with designers and product stakeholders to translate early concepts into production-ready interfaces, refining layouts and interaction behavior as requirements evolved."
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Gauntlet Designs",
+      "title": "Founder",
+      "dates": "01/2020 - 01/2025",
+      "location": "",
+      "bullets": [
+        "Delivered custom frontend work for small businesses and nonprofits, owning UI design decisions, frontend implementation, and deployment across a range of project scopes.",
+        "Designed and built a long-running internal platform for a large restaurant franchise, supporting employee workflows and event scheduling and remaining in active use years after launch.",
+        "Built accessible, responsive interfaces using modern frontend frameworks, balancing polish with maintainability and clear documentation for future handoff."
+      ]
+    },
+    {
+      "company": "IronClad",
+      "title": "UI Developer",
+      "dates": "01/2022 - 03/2022",
+      "location": "",
+      "bullets": [
+        "Produced wireframes and interaction flows that clarified UI requirements and helped establish the initial frontend structure before full implementation.",
+        "Worked closely with engineers to translate design intent into reusable component patterns, contributing early Storybook examples in TypeScript to guide consistent development.",
+        "Helped align design and engineering expectations by documenting layout decisions and interaction behavior, reducing ambiguity as the project moved into build phases."
+      ]
+    },
+    {
+      "company": "Global Dimensions",
+      "title": "Web Developer",
+      "dates": "08/2021 - 01/2022",
+      "location": "",
+      "bullets": [
+        "Built data-heavy geospatial interfaces using Vue and Vuetify, supporting analyst workflows that relied on clear hierarchy and predictable interaction patterns.",
+        "Implemented scroll-driven and timeline-based interactions using GSAP, translating motion concepts into performant frontend behavior within strict layout constraints.",
+        "Converted existing animation and interaction concepts into accessible Vue components, balancing visual intent with usability and performance requirements."
+      ]
+    }
+  ],
+  "awards": [],
+  "projects": [
+    {
+      "title": "No Whiteboard Jobs Dashboard",
+      "description": "Production dashboard built on the Hiring Without Whiteboards dataset with search, filtering, pagination, and responsive card/list views. Built with Astro, TypeScript, and Tailwind CSS.",
+      "urls": ["https://no-wb.org"]
+    },
+    {
+      "title": "NPC Finder",
+      "description": "Full-stack app for media libraries and task workflows using React 19, TypeScript, Supabase, PostgreSQL (RLS), Tailwind, and Framer Motion.",
+      "urls": ["https://npcfinder.com"]
+    },
+    {
+      "title": "Potomac Family Dining",
+      "description": "Enterprise web platform for a multi-state restaurant franchise, including employee portal, careers, directory, and contact workflows. Built with Vue.js, JavaScript, and Firebase.",
+      "urls": ["https://potomacdining.com"]
+    }
+  ],
+  "education": [
+    {
+      "title": "George Washington University, 2020",
+      "details": "Web Development Certification"
+    },
+    {
+      "title": "General Assembly, 2022",
+      "details": "User Experience Design"
+    },
+    {
+      "title": "CompTIA, 2022",
+      "details": "Security+ (Active)"
+    }
+  ],
+  "skills": {
+    "Frontend & Engineering": [
+      "HTML/CSS",
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Vue",
+      "Angular",
+      "Animations (GSAP, Framer Motion)",
+      "WCAG and Section 508"
+    ],
+    "Tooling & Collaboration": [
+      "Storybook",
+      "Figma",
+      "TanStack Query",
+      "Git",
+      "REST API Integration",
+      "PostgreSQL",
+      "CI/CD",
+      "Testing"
+    ],
+    "AI Skills & Tooling": [
+      "Claude",
+      "GitHub Copilot Pro+",
+      "Traycer",
+      "OpenAI",
+      "Prompt Engineering",
+      "Multi-Agent Development",
+      "AI-Assisted Development"
+    ]
+  }
+}

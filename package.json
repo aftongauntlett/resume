@@ -1,10 +1,11 @@
 {
   "name": "resume-builder",
   "version": "1.0.0",
-  "description": "Afton Gauntlett Resume builder using Handlebars + Puppeteer",
+  "description": "Afton Gauntlett resume builder using JSON + Handlebars + pdfmake",
   "main": "build.js",
   "scripts": {
-    "build": "node build.js"
+    "build": "node build.js",
+    "dev": "node build.js"
   },
   "repository": {
     "type": "git",
@@ -19,7 +20,6 @@
   "homepage": "https://github.com/aftongauntlett/resume#readme",
   "dependencies": {
     "handlebars": "^4.7.8",
-    "pdf-lib": "^1.17.1",
-    "puppeteer": "^24.18.0"
+    "pdfmake": "^0.2.20"
   }
 }
