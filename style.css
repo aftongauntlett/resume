@@ -1,44 +1,23 @@
 /* Roboto font faces */
 @font-face {
-  font-family: "Roboto";
-  src: url("fonts/Roboto-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Roboto";
+  font-family: "Inter";
   src: url("fonts/Roboto-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Roboto";
-  src: url("fonts/Roboto-Italic.ttf") format("truetype");
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Roboto";
-  src: url("fonts/Roboto-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Roboto";
-  src: url("fonts/Roboto-SemiBold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Roboto";
+  font-family: "Inter";
   src: url("fonts/Roboto-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/Roboto-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
   font-display: swap;
 }
 
@@ -57,7 +36,7 @@ body {
   margin: 0;
   padding: 0;
   font-family:
-    "Roboto",
+    "Inter",
     -apple-system,
     BlinkMacSystemFont,
     "Segoe UI",
@@ -126,13 +105,13 @@ a:hover {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #111;
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 0.3rem 0;
   border-bottom: 2px solid var(--rule);
   padding-bottom: 0.2rem;
 }
 .summary {
   font-size: 10pt;
-  line-height: 1.6;
+  line-height: 1.4;
   color: #222;
 }
 
@@ -194,33 +173,6 @@ a:hover {
 }
 .skill-line strong {
   font-weight: 600;
-}
-
-/* Legacy skills grid styles left intentionally in case of fallback */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.5rem 1rem;
-  page-break-inside: avoid;
-}
-.skill-category {
-  margin-bottom: 0.2rem;
-}
-.skill-heading {
-  font-size: 10pt;
-  font-weight: 600;
-  color: #111;
-  margin: 0 0 0.2rem;
-}
-.skill-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.skill-list li {
-  font-size: 9.5pt;
-  line-height: 1.4;
-  margin: 0 0 0.18rem 0;
 }
 
 /* Page break utility (only if explicitly added in template) */

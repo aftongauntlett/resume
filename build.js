@@ -20,7 +20,7 @@ const pdfFile = `${baseName}.pdf`;
 const htmlFile = `${baseName}.html`;
 
 const fonts = {
-  Roboto: {
+  Inter: {
     normal: path.resolve(__dirname, "fonts/Roboto-Regular.ttf"),
     bold: path.resolve(__dirname, "fonts/Roboto-Bold.ttf"),
     italics: path.resolve(__dirname, "fonts/Roboto-Italic.ttf"),
@@ -57,14 +57,71 @@ function buildPdfDefinition(data) {
   const { personal, summary, skills, experience, education, projects, awards } =
     data;
 
-  const contactLine = [
-    personal.location,
-    personal.phone,
-    personal.email,
-    personal.website,
-  ]
-    .filter(Boolean)
-    .join("  |  ");
+  const contactComponents = [];
+  if (personal.location) {
+    contactComponents.push({ text: personal.location, color: "#333333" });
+  }
+  if (personal.phone) {
+    if (contactComponents.length)
+      contactComponents.push({ text: "  |  ", color: "#333333" });
+    contactComponents.push({
+      text: personal.phone,
+      link: `tel:${personal.phone.replace(/[^\d+]/g, "")}`,
+      color: "#333333",
+      decoration: "underline",
+    });
+  }
+  if (personal.email) {
+    if (contactComponents.length)
+      contactComponents.push({ text: "  |  ", color: "#333333" });
+    contactComponents.push({
+      text: personal.email,
+      link: `mailto:${personal.email}`,
+      color: "#333333",
+      decoration: "underline",
+    });
+  }
+  if (personal.website) {
+    if (contactComponents.length)
+      contactComponents.push({ text: "  |  ", color: "#333333" });
+    const websiteUrl = personal.website.match(/^https?:\/\//)
+      ? personal.website
+      : `https://${personal.website}`;
+    contactComponents.push({
+      text: "Portfolio",
+      link: websiteUrl,
+      color: "#333333",
+      decoration: "underline",
+    });
+  }
+
+  if (personal.linkedin) {
+    if (contactComponents.length)
+      contactComponents.push({ text: "  |  ", color: "#333333" });
+    const linkedinUrl = personal.linkedin.match(/^https?:\/\//)
+      ? personal.linkedin
+      : `https://${personal.linkedin}`;
+    contactComponents.push({
+      text: "LinkedIn",
+      link: linkedinUrl,
+      color: "#333333",
+      decoration: "underline",
+    });
+  }
+
+  if (personal.github) {
+    if (contactComponents.length)
+      contactComponents.push({ text: "  |  ", color: "#333333" });
+    const githubUrl = personal.github.match(/^https?:\/\//)
+      ? personal.github
+      : `https://${personal.github}`;
+    contactComponents.push({
+      text: "GitHub",
+      link: githubUrl,
+      color: "#333333",
+      decoration: "underline",
+    });
+  }
 
   const content = [];
 
@@ -76,7 +133,11 @@ function buildPdfDefinition(data) {
     ],
     margin: [0, 0, 0, 0],
   });
-  content.push({ text: contactLine, style: "contact", margin: [0, 0, 0, 14] });
+  content.push({
+    text: contactComponents,
+    style: "contact",
+    margin: [0, 0, 0, 14],
+  });
 
   content.push(sectionHeader("PROFESSIONAL SUMMARY"));
   content.push({ text: summary, style: "summary", margin: [0, 0, 0, 12] });
@@ -223,7 +284,7 @@ function buildPdfDefinition(data) {
     pageSize: "LETTER",
     pageMargins: [32, 24, 32, 24],
     defaultStyle: {
-      font: "Roboto",
+      font: "Inter",
       fontSize: 9,
       lineHeight: 1.2,
       color: "#1a1a1a",

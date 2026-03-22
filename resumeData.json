@@ -5,11 +5,11 @@
     "email": "hello@aftongauntlett.com",
     "phone": "(571) 249-1952",
     "location": "Ashburn, VA 20147",
-    "linkedin": "",
-    "github": "",
-    "website": "aftongauntlett.com"
+    "linkedin": "https://www.linkedin.com/in/afton-gauntlett/",
+    "github": "https://github.com/aftongauntlett",
+    "website": "www.aftongauntlett.com"
   },
-  "summary": "Frontend Developer with 6+ years of experience leading UI work on large, production platforms. I've owned frontend architecture, guided interface decisions, and shipped complex applications used across distributed teams. My background spans enterprise systems and custom products, with a consistent focus on interface quality that holds up as software scales. I work across the full frontend stack — React, TypeScript, Next.js, and Vue day to day, alongside tools like GitHub Copilot, Claude, and Storybook to keep code consistent and development moving.",
+  "summary": "Frontend Developer with 6+ years of experience leading UI work on large, production platforms. I've owned frontend architecture, guided interface decisions, and shipped complex applications used across distributed teams. My background spans enterprise systems and custom products, with a consistent focus on interface quality that holds up as software scales. I move comfortably across React, Vue, Angular, Next.js, and Astro depending on what a project needs, and work regularly with TypeScript, TanStack Query, Supabase, and Vercel on the integration and deployment side.",
   "experience": [
     {
       "company": "Booz Allen Hamilton",
@@ -42,7 +42,7 @@
       "location": "",
       "bullets": [
         "Delivered custom frontend work for small businesses and nonprofits, owning UI design decisions, frontend implementation, and deployment across a range of project scopes.",
-        "Designed and built a long-running internal platform for a large restaurant franchise, supporting employee workflows and event scheduling and remaining in active use years after launch.",
+        "Designed and built an employee portal and scheduling platform for a multi-state restaurant franchise, still in active use years after launch and supporting hundreds of employees across multiple locations.",
         "Built accessible, responsive interfaces using modern frontend frameworks, balancing polish with maintainability and clear documentation for future handoff."
       ]
     },
@@ -120,33 +120,8 @@
     }
   ],
   "skills": {
-    "Frontend & Engineering": [
-      "HTML/CSS",
-      "JavaScript",
-      "TypeScript",
-      "React",
-      "Next.js",
-      "Vue",
-      "Angular",
-      "Storybook",
-      "Figma",
-      "TanStack Query",
-      "GSAP",
-      "Framer Motion",
-      "WCAG & Section 508",
-      "REST API Integration",
-      "PostgreSQL",
-      "Git",
-      "CI/CD",
-      "Testing"
-    ],
-    "AI & Tooling": [
-      "GitHub Copilot Pro+",
-      "Claude",
-      "Traycer",
-      "OpenAI",
-      "Prompt Engineering",
-      "Multi-Agent Development"
+    "Combined": [
+      "HTML/CSS • JavaScript • TypeScript • React • Next.js • Vue • Angular • Animations (GSAP, Framer Motion) • Figma • Storybook • TanStack Query • REST API Integration • PostgreSQL • Supabase • Vercel • Git • CI/CD Pipelines • Testing • WCAG & Section 508 • GitHub Copilot • Postman"
     ]
   }
 }
