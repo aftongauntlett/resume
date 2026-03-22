@@ -177,10 +177,26 @@ a:hover {
   font-size: 9.5pt;
 }
 
-/* Skills grid */
+/* Skills inline (single row per category) */
 .section.skills {
   page-break-inside: auto;
 }
+.skills-inline {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.skill-line {
+  font-size: 9.5pt;
+  line-height: 1.35;
+  color: #222;
+  margin-bottom: 0.2rem;
+}
+.skill-line strong {
+  font-weight: 600;
+}
+
+/* Legacy skills grid styles left intentionally in case of fallback */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

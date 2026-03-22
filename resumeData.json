@@ -9,7 +9,7 @@
     "github": "",
     "website": "aftongauntlett.com"
   },
-  "summary": "Frontend Developer with 6+ years of experience leading UI work on large, production platforms. I've owned frontend architecture, guided interface decisions, and shipped complex applications used across distributed teams. AI-assisted and agentic development are central to how I build now, using Claude, GitHub Copilot Pro+, and multi-agent tooling to accelerate development, write architecture docs, and maintain consistent code quality. My background spans enterprise systems and custom products, with a consistent focus on interface quality that holds up as software scales.",
+  "summary": "Frontend Developer with 6+ years of experience leading UI work on large, production platforms. I've owned frontend architecture, guided interface decisions, and shipped complex applications used across distributed teams. My background spans enterprise systems and custom products, with a consistent focus on interface quality that holds up as software scales. I work across the full frontend stack — React, TypeScript, Next.js, and Vue day to day, alongside tools like GitHub Copilot, Claude, and Storybook to keep code consistent and development moving.",
   "experience": [
     {
       "company": "Booz Allen Hamilton",
@@ -19,7 +19,7 @@
           "dates": "03/2023 - 05/2025",
           "bullets": [
             "Led frontend architecture for multiple production applications, introducing Storybook and shared frontend patterns that improved consistency and reduced redundant UI work as systems scaled.",
-            "Built a secure, air-gapped LLM-powered chatbot that automated onboarding and daily AI-assisted workflows, getting new team members productive faster through guided VS Code scripting and contextual documentation. Authored internal AI-assisted workflows that enabled the team to use the chatbot for code assistance under strict compliance constraints.",
+            "Partnered with the MLOps team to deploy and configure a locally-hosted LLM environment for the unclassified team, enabling development workflows under strict compliance constraints. Took initiative to bridge a gap between classified and unclassified tooling, then led the frontend redesign of the chatbot interface.",
             "Designed and delivered a stepper-driven data portal to replace a manual Excel and email process, streamlining a previously error-prone workflow, reducing support tickets, and strengthening the proposal against competing bids on a high-value contract.",
             "Worked with stakeholders and designers early in the process, using Figma-based workflows and lightweight prototypes to shape interaction and layout decisions before writing large amounts of code."
           ]
@@ -69,17 +69,34 @@
       ]
     }
   ],
-  "awards": [],
+  "awards": [
+    {
+      "title": "Platinum Award (Booz Allen Hamilton)",
+      "year": "2024",
+      "details": "Built and shipped a custom registration and scheduling platform for a large multi-day convention (100+ attendees), centralizing session sign-ups and on-site check-in and supporting real-time scheduling during the event."
+    },
+    {
+      "title": "Gold Award (Booz Allen Hamilton)",
+      "year": "2023",
+      "details": "Led an iterative design and prototyping process incorporating stakeholder feedback at each stage; the final direction was chosen over a competing proposal, accelerating stakeholder buy-in and streamlining implementation."
+    },
+    {
+      "title": "Gold Award (Booz Allen Hamilton)",
+      "year": "2022",
+      "details": "Directed the redesign and rebuild of a high-visibility enterprise application used across multiple client teams; improvements to usability and visual clarity increased adoption and earned recognition from Amazon Developers for design excellence."
+    }
+  ],
   "projects": [
     {
       "title": "No Whiteboard Jobs Dashboard",
       "description": "Production dashboard built on the Hiring Without Whiteboards dataset with search, filtering, pagination, and responsive card/list views. Built with Astro, TypeScript, and Tailwind CSS.",
       "urls": ["https://no-wb.org"]
     },
+
     {
-      "title": "NPC Finder",
-      "description": "Full-stack app for media libraries and task workflows using React 19, TypeScript, Supabase, PostgreSQL (RLS), Tailwind, and Framer Motion.",
-      "urls": ["https://npcfinder.com"]
+      "title": "By Astrid Beauty Salon",
+      "description": "Production website built for a local hair salon with Astro and Tailwind on a performance-first, mobile-responsive layout with accessible markup and SEO-friendly structure.",
+      "urls": ["https://www.byastridbeautysalon.com/"]
     },
     {
       "title": "Potomac Family Dining",
@@ -98,7 +115,8 @@
     },
     {
       "title": "CompTIA, 2022",
-      "details": "Security+ (Active)"
+      "details": "Security+",
+      "url": "https://www.credly.com/badges/90402bb7-7fdf-4945-aea3-b20fd916f1b4"
     }
   ],
   "skills": {
@@ -110,27 +128,25 @@
       "Next.js",
       "Vue",
       "Angular",
-      "Animations (GSAP, Framer Motion)",
-      "WCAG and Section 508"
-    ],
-    "Tooling & Collaboration": [
       "Storybook",
       "Figma",
       "TanStack Query",
-      "Git",
+      "GSAP",
+      "Framer Motion",
+      "WCAG & Section 508",
       "REST API Integration",
       "PostgreSQL",
+      "Git",
       "CI/CD",
       "Testing"
     ],
-    "AI Skills & Tooling": [
-      "Claude",
+    "AI & Tooling": [
       "GitHub Copilot Pro+",
+      "Claude",
       "Traycer",
       "OpenAI",
       "Prompt Engineering",
-      "Multi-Agent Development",
-      "AI-Assisted Development"
+      "Multi-Agent Development"
     ]
   }
 }

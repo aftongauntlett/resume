@@ -7,6 +7,14 @@ const resumeData = require("./resumeData.json");
 
 Handlebars.registerHelper("tel", (str) => (str || "").replace(/[^\d+]/g, ""));
 
+Handlebars.registerHelper("concatSkills", (skills) => {
+  if (!skills || typeof skills !== "object") {
+    return "";
+  }
+  const combined = Object.values(skills).flat().filter(Boolean).join(" • ");
+  return combined;
+});
+
 const baseName = "afton-gauntlett-resume";
 const pdfFile = `${baseName}.pdf`;
 const htmlFile = `${baseName}.html`;
@@ -73,18 +81,34 @@ function buildPdfDefinition(data) {
   content.push(sectionHeader("PROFESSIONAL SUMMARY"));
   content.push({ text: summary, style: "summary", margin: [0, 0, 0, 12] });
 
-  content.push(sectionHeader("TECHNICAL SKILLS"));
-  Object.entries(skills).forEach(([category, items]) => {
-    content.push({
-      columns: [
-        { width: 170, text: category, style: "skillHeading" },
-        { width: "*", text: items.join(", "), style: "skillInline" },
-      ],
-      columnGap: 8,
-      margin: [0, 0, 0, 4],
+  if (awards && awards.length) {
+    content.push(sectionHeader("AWARDS & RECOGNITION"));
+    awards.forEach((award) => {
+      content.push({
+        columns: [
+          { width: "*", text: award.title, style: "company" },
+          { width: "auto", text: award.year || "", style: "date" },
+        ],
+        margin: [0, 0, 0, 2],
+      });
+      content.push({
+        text: award.details,
+        style: "entryText",
+        margin: [0, 0, 0, 8],
+      });
     });
+  }
+
+  content.push(sectionHeader("TECHNICAL SKILLS"));
+  const combinedSkills = Object.values(skills)
+    .flat()
+    .filter(Boolean)
+    .join(" • ");
+  content.push({
+    text: combinedSkills,
+    style: "skillInline",
+    margin: [0, 0, 0, 8],
   });
-  content.push({ text: "", margin: [0, 0, 0, 8] });
 
   content.push(sectionHeader("EXPERIENCE"));
   experience.forEach((entry) => {
@@ -130,10 +154,22 @@ function buildPdfDefinition(data) {
 
   content.push(sectionHeader("EDUCATION & CERTIFICATIONS"));
   education.forEach((item) => {
+    const detailsText = [{ text: item.details, style: "date" }];
+    if (item.url) {
+      detailsText.push({ text: " ", style: "date" });
+      detailsText.push({
+        text: "(Active)",
+        style: "date",
+        link: item.url,
+        decoration: "underline",
+        color: "#555555",
+      });
+    }
+
     content.push({
       columns: [
         { width: "*", text: item.title, style: "company" },
-        { width: "auto", text: item.details, style: "date" },
+        { width: "auto", text: detailsText },
       ],
       margin: [0, 0, 0, 7],
     });
@@ -151,42 +187,25 @@ function buildPdfDefinition(data) {
         ? url.replace(/^https?:\/\//, "").replace(/^www\./, "")
         : "";
       content.push({
-        text: project.title,
-        style: "company",
-        margin: [0, 0, 0, 1],
-      });
-      if (url) {
-        content.push({
-          text: displayUrl,
-          link: url,
-          color: "#555555",
-          decoration: "underline",
-          fontSize: 8.5,
-          margin: [0, 0, 0, 2],
-        });
-      }
-      content.push({
-        text: project.description,
-        style: "entryText",
-        margin: [0, 0, 0, isLastProject ? 0 : 6],
-      });
-    });
-  }
-
-  if (awards && awards.length) {
-    content.push(sectionHeader("AWARDS & RECOGNITION"));
-    awards.forEach((award) => {
-      content.push({
         columns: [
-          { width: "*", text: award.title, style: "company" },
-          { width: "auto", text: award.year || "", style: "date" },
+          { width: "*", text: project.title, style: "company" },
+          url
+            ? {
+                width: "auto",
+                text: displayUrl,
+                style: "date",
+                link: url,
+                color: "#555555",
+                decoration: "underline",
+              }
+            : {},
         ],
         margin: [0, 0, 0, 2],
       });
       content.push({
-        text: award.details,
+        text: project.description,
         style: "entryText",
-        margin: [0, 0, 0, 8],
+        margin: [0, 0, 0, isLastProject ? 0 : 6],
       });
     });
   }
@@ -202,11 +221,11 @@ function buildPdfDefinition(data) {
       producer: "pdfmake",
     },
     pageSize: "LETTER",
-    pageMargins: [42, 34, 42, 34],
+    pageMargins: [32, 24, 32, 24],
     defaultStyle: {
       font: "Roboto",
-      fontSize: 10,
-      lineHeight: 1.45,
+      fontSize: 9,
+      lineHeight: 1.2,
       color: "#1a1a1a",
       fontFeatures: {
         liga: false,
