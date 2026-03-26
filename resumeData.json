@@ -1,7 +1,7 @@
 {
   "personal": {
     "name": "Afton Gauntlett",
-    "title": "Frontend Developer",
+    "title": "Frontend Developer & Product Designer",
     "email": "hello@aftongauntlett.com",
     "phone": "(571) 249-1952",
     "location": "Ashburn, VA 20147",
@@ -9,7 +9,7 @@
     "github": "https://github.com/aftongauntlett",
     "website": "www.aftongauntlett.com"
   },
-  "summary": "Frontend Developer with 6+ years of experience leading UI work on large, production platforms. I've owned frontend architecture, guided interface decisions, and shipped complex applications used across distributed teams. My background spans enterprise systems and custom products, with a consistent focus on interface quality that holds up as software scales. I move comfortably across React, Vue, Angular, Next.js, and Astro depending on what a project needs, and work regularly with TypeScript, TanStack Query, Supabase, and Vercel on the integration and deployment side.",
+  "summary": "Frontend developer with 6+ years building interactive, production-ready applications. I design and implement scalable component systems with a focus on usability, consistency, and long-term maintainability, embedding WCAG and Section 508 standards directly into the architecture. I work across design and engineering to turn complex workflows into clear, intuitive interfaces and reduce friction from concept to implementation.",
   "experience": [
     {
       "company": "Booz Allen Hamilton",
@@ -18,19 +18,19 @@
           "title": "Lead Engineer",
           "dates": "03/2023 - 05/2025",
           "bullets": [
-            "Led frontend architecture for multiple production applications, introducing Storybook and shared frontend patterns that improved consistency and reduced redundant UI work as systems scaled.",
-            "Partnered with the MLOps team to deploy and configure a locally-hosted LLM environment for the unclassified team, enabling development workflows under strict compliance constraints. Took initiative to bridge a gap between classified and unclassified tooling, then led the frontend redesign of the chatbot interface.",
-            "Designed and delivered a stepper-driven data portal to replace a manual Excel and email process, streamlining a previously error-prone workflow, reducing support tickets, and strengthening the proposal against competing bids on a high-value contract.",
-            "Worked with stakeholders and designers early in the process, using Figma-based workflows and lightweight prototypes to shape interaction and layout decisions before writing large amounts of code."
+            "Led design system governance and Storybook-driven shared UI patterns that improved interface consistency, reduced redundant work, and elevated accessibility in a multi-team platform.",
+            "Partnered with MLOps to deploy a locally-hosted LLM environment under compliance constraints and led the chatbot interface redesign for a more trustworthy, usable experience.",
+            "Drove design process outcomes with stakeholder alignment and interactive prototypes to enable cleaner handoff and reduce implementation rework.",
+            "Delivered an accessible stepper-driven data portal replacing a manual Excel/email workflow, reducing support tickets and showing measurable user and business value."
           ]
         },
         {
           "title": "Software Engineer",
           "dates": "03/2022 - 03/2023",
           "bullets": [
-            "Rebuilt and modernized large frontend surfaces by migrating legacy Angular-based interfaces to React, improving structure, readability, and long-term maintainability.",
-            "Implemented complex dashboard views and workflow-driven UIs by integrating backend APIs into custom frontend components rather than relying on embedded third-party tools.",
-            "Partnered with designers and product stakeholders to translate early concepts into production-ready interfaces, refining layouts and interaction behavior as requirements evolved."
+            "Executed an Angular-to-React frontend migration as a design-quality initiative, improving structure, component reuse, and long-term maintainability while preserving established user workflows.",
+            "Collaborated with product and design partners to evolve interaction behavior through iterative prototypes, which guided implementation decisions and UI scope clarity.",
+            "Maintained clean handoff artifacts with Storybook examples, component doc comments, and accessibility annotations to align designer intent and engineering delivery."
           ]
         }
       ]
@@ -41,9 +41,9 @@
       "dates": "01/2020 - 01/2025",
       "location": "",
       "bullets": [
-        "Delivered custom frontend work for small businesses and nonprofits, owning UI design decisions, frontend implementation, and deployment across a range of project scopes.",
-        "Designed and built an employee portal and scheduling platform for a multi-state restaurant franchise, still in active use years after launch and supporting hundreds of employees across multiple locations.",
-        "Built accessible, responsive interfaces using modern frontend frameworks, balancing polish with maintainability and clear documentation for future handoff."
+        "Led design-first product delivery for small businesses and nonprofits, owning UX strategy, prototyping, accessible UI patterns, and frontend implementation with handoff-ready documentation.",
+        "Designed and launched a multi-state restaurant employee portal and scheduling platform still in active use, with clear interaction patterns, accessibility checks, and maintenance guidance.",
+        "Built responsive, accessible components with modern frameworks while producing style guides and usage notes for cross-functional teams to preserve quality in support and iteration."
       ]
     },
     {
@@ -52,9 +52,9 @@
       "dates": "01/2022 - 03/2022",
       "location": "",
       "bullets": [
-        "Produced wireframes and interaction flows that clarified UI requirements and helped establish the initial frontend structure before full implementation.",
-        "Worked closely with engineers to translate design intent into reusable component patterns, contributing early Storybook examples in TypeScript to guide consistent development.",
-        "Helped align design and engineering expectations by documenting layout decisions and interaction behavior, reducing ambiguity as the project moved into build phases."
+        "Produced wireframes and interaction flows to clarify requirements, enabling early team consensus and reducing ambiguity before implementation.",
+        "Translated design intent into reusable component patterns, shipping early Storybook examples in TypeScript that anchored visual and behavior consistency.",
+        "Focused on design-to-dev alignment by documenting layout decisions, accessibility considerations, and expected interactions as engineering reference."
       ]
     },
     {
@@ -63,9 +63,9 @@
       "dates": "08/2021 - 01/2022",
       "location": "",
       "bullets": [
-        "Built data-heavy geospatial interfaces using Vue and Vuetify, supporting analyst workflows that relied on clear hierarchy and predictable interaction patterns.",
-        "Implemented scroll-driven and timeline-based interactions using GSAP, translating motion concepts into performant frontend behavior within strict layout constraints.",
-        "Converted existing animation and interaction concepts into accessible Vue components, balancing visual intent with usability and performance requirements."
+        "Designed geospatial workflow interfaces with clear hierarchy and predictable interactions for analyst users, using Vue and Vuetify components.",
+        "Translated motion concepts into performant GSAP and interaction-based UI, balancing visual affordance with accessibility and load constraints.",
+        "Turned visual and interaction ideas into reusable accessible Vue components, with documented patterns for future iteration and handoff."
       ]
     }
   ],
@@ -88,20 +88,19 @@
   ],
   "projects": [
     {
-      "title": "No Whiteboard Jobs Dashboard",
-      "description": "Production dashboard built on the Hiring Without Whiteboards dataset with search, filtering, pagination, and responsive card/list views. Built with Astro, TypeScript, and Tailwind CSS.",
+      "title": "No Whiteboard Jobs Dashboard - Personal Project",
+      "description": "Designed a data-first dashboard experience on the Hiring Without Whiteboards dataset with search, filtering, pagination, and responsive card/list views that support user task flows. Built with Astro, TypeScript, and Tailwind CSS, using AI-assisted workflows to accelerate development while maintaining code quality and consistency.",
       "urls": ["https://no-wb.org"]
     },
-
     {
-      "title": "By Astrid Beauty Salon",
-      "description": "Production website built for a local hair salon with Astro and Tailwind on a performance-first, mobile-responsive layout with accessible markup and SEO-friendly structure.",
+      "title": "By Astrid Beauty Salon - Freelance",
+      "description": "Designed and developed the salon’s first website in 2020, then led a full refactor in 2026 to improve performance, accessibility, and maintainability. Built responsive, accessible UI with clear service pathways, while evolving the structure and codebase to better support future updates and long-term use.",
       "urls": ["https://www.byastridbeautysalon.com/"]
     },
     {
-      "title": "Potomac Family Dining",
-      "description": "Enterprise web platform for a multi-state restaurant franchise, including employee portal, careers, directory, and contact workflows. Built with Vue.js, JavaScript, and Firebase.",
-      "urls": ["https://potomacdining.com"]
+      "title": "vvd - Freelance",
+      "description": "Supported development of a campaign feature and contributed to a legacy refactor onto a new codebase. Designed and guided an AI-assisted development workflow where bug reports triggered automated ticket and branch creation, agent-driven implementation, and PR generation. Led PRD creation and directed multiple agents through execution, reviewing outputs and ensuring code quality, alignment, and successful integration into the codebase.",
+      "urls": ["https://vvd.world/"]
     }
   ],
   "education": [
@@ -121,7 +120,7 @@
   ],
   "skills": {
     "Combined": [
-      "HTML/CSS • JavaScript • TypeScript • React • Next.js • Vue • Angular • Animations (GSAP, Framer Motion) • Figma • Storybook • TanStack Query • REST API Integration • PostgreSQL • Supabase • Vercel • Git • CI/CD Pipelines • Testing • WCAG & Section 508"
+      "HTML/CSS • JavaScript • TypeScript • React • Next.js • Vue • Angular • Astro • Framer Motion • GSAP • Canvas API • Figma • Storybook • TanStack Query • Supabase • Vercel • Git • Python • CI/CD • Testing • WCAG & Section 508 • GitHub Copilot • Multi-agent orchestration • LLM workflow design"
     ]
   }
 }

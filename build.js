@@ -3,7 +3,14 @@ const path = require("path");
 const Handlebars = require("handlebars");
 const PdfPrinter = require("pdfmake");
 
-const resumeData = require("./resumeData.json");
+const inputFile = process.argv[2] || "resumeData.json";
+const resumeData = require(`./${inputFile}`);
+const inputBase = path.basename(inputFile, path.extname(inputFile));
+const baseName = inputBase.startsWith("resumeData")
+  ? inputBase.replace("resumeData", "afton-gauntlett-resume")
+  : `afton-gauntlett-resume-${inputBase}`;
+const pdfFile = `${baseName}.pdf`;
+const htmlFile = `${baseName}.html`;
 
 Handlebars.registerHelper("tel", (str) => (str || "").replace(/[^\d+]/g, ""));
 
@@ -14,10 +21,6 @@ Handlebars.registerHelper("concatSkills", (skills) => {
   const combined = Object.values(skills).flat().filter(Boolean).join(" • ");
   return combined;
 });
-
-const baseName = "afton-gauntlett-resume";
-const pdfFile = `${baseName}.pdf`;
-const htmlFile = `${baseName}.html`;
 
 const fonts = {
   Inter: {
@@ -142,24 +145,6 @@ function buildPdfDefinition(data) {
   content.push(sectionHeader("PROFESSIONAL SUMMARY"));
   content.push({ text: summary, style: "summary", margin: [0, 0, 0, 12] });
 
-  if (awards && awards.length) {
-    content.push(sectionHeader("AWARDS & RECOGNITION"));
-    awards.forEach((award) => {
-      content.push({
-        columns: [
-          { width: "*", text: award.title, style: "company" },
-          { width: "auto", text: award.year || "", style: "date" },
-        ],
-        margin: [0, 0, 0, 2],
-      });
-      content.push({
-        text: award.details,
-        style: "entryText",
-        margin: [0, 0, 0, 8],
-      });
-    });
-  }
-
   content.push(sectionHeader("TECHNICAL SKILLS"));
   const combinedSkills = Object.values(skills)
     .flat()
@@ -212,6 +197,24 @@ function buildPdfDefinition(data) {
       });
     }
   });
+
+  if (awards && awards.length) {
+    content.push(sectionHeader("AWARDS & RECOGNITION"));
+    awards.forEach((award) => {
+      content.push({
+        columns: [
+          { width: "*", text: award.title, style: "company" },
+          { width: "auto", text: award.year || "", style: "date" },
+        ],
+        margin: [0, 0, 0, 2],
+      });
+      content.push({
+        text: award.details,
+        style: "entryText",
+        margin: [0, 0, 0, 8],
+      });
+    });
+  }
 
   content.push(sectionHeader("EDUCATION & CERTIFICATIONS"));
   education.forEach((item) => {
