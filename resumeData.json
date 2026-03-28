@@ -5,9 +5,9 @@
     "email": "hello@aftongauntlett.com",
     "phone": "(571) 249-1952",
     "location": "Ashburn, VA 20147",
-    "linkedin": "https://www.linkedin.com/in/afton-gauntlett/",
+    "linkedin": "https://linkedin.com/in/afton-gauntlett/",
     "github": "https://github.com/aftongauntlett",
-    "website": "www.aftongauntlett.com"
+    "website": "https://aftongauntlett.com"
   },
   "summary": "Senior Frontend Developer with 6+ years of experience building accessible, user-focused applications. My work centers on design systems, component architecture, and translating complex product ideas into clear, usable interfaces. I’m especially focused on interaction quality, user experience, and making sure what we build holds up in real use.",
   "experience": [
@@ -55,8 +55,7 @@
       "location": "Remote",
       "bullets": [
         "Contributed to early-stage product direction by creating wireframes and interaction flows that clarified requirements and aligned design and engineering.",
-        "Documented layout decisions, accessibility considerations, and interaction patterns to establish a shared reference point for implementation.",
-        "Helped bridge design and engineering by translating product ideas into clear, buildable UI patterns."
+        "Documented layout decisions, accessibility considerations, and interaction patterns to establish a shared reference point for implementation."
       ]
     },
     {
@@ -98,7 +97,7 @@
     {
       "title": "By Astrid Beauty Salon - Freelance Client",
       "description": "Designed and developed the salon’s website, then led a full refactor adding i18n support and improving accessibility, performance, and long-term maintainability. Focused on clear service pathways and a simple, approachable user experience.",
-      "urls": ["https://www.byastridbeautysalon.com/"]
+      "urls": ["https://byastridbeautysalon.com/"]
     },
     {
       "title": "vvd - Contract",

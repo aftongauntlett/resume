@@ -1,0 +1,126 @@
+Afton Gauntlett, Senior Frontend Developer
+Ashburn, VA 20147 | (571) 249-1952 | hello@aftongauntlett.com | Portfolio (https://www.aftongauntlett.com) | LinkedIn (https://
+linkedin.com/in/afton-gauntlett/) | GitHub (https://github.com/aftongauntlett)
+
+PROFESSIONAL SUMMARY
+Senior Frontend Developer with 6+ years of experience building accessible, user-focused applications. My work centers on
+design systems, component architecture, and translating complex product ideas into clear, usable interfaces. I’m especially
+focused on interaction quality, user experience, and making sure what we build holds up in real use.
+
+TECHNICAL SKILLS
+TypeScript • JavaScript • React • Next.js • Vue • Astro • Tailwind CSS • Framer Motion • GSAP • Figma • Storybook • TanStack Query •
+Supabase • PostgreSQL • Vercel • Jest • Vitest • Git • GitHub Copilot • Postman • Accessibility (WCAG, Section 508) • i18n
+
+EXPERIENCE
+Booz Allen Hamilton
+Lead Engineer
+
+03/2023 - 05/2025
+
+Mentored frontend developers through code reviews and pair programming, reinforcing consistent patterns, accessibility
+practices, and thoughtful UI implementation across the team.
+Collaborated with MLOps to deploy a locally-hosted LLM environment and led the redesign of the chatbot interface,
+focusing on clarity and ease of use in a sensitive domain.
+Designed and built a stepper-driven data portal that replaced a manual Excel and email-based process, turning a
+fragmented workflow into a clear, guided user experience.
+Established reusable component patterns and interaction guidelines that improved consistency across screens and
+reduced one-off implementations.
+
+Software Engineer
+
+03/2022 - 03/2023
+
+Led an Angular-to-React migration with a focus on improving UI structure, component reuse, and long-term maintainability
+while preserving familiar user workflows.
+Introduced shared frontend standards and tooling - Prettier, ESLint, Husky - and led a shift from class-based to functional
+components, adopting TanStack Query to make data and state handling more consistent and predictable across the UI.
+Authored onboarding guides and accessibility documentation, helping new developers understand system patterns and
+build interfaces that are usable by default.
+
+Gauntlet Designs, Founder
+
+01/2020 - Present (Freelance)
+
+Founded a small web studio delivering design-focused products for small businesses and nonprofits, with an emphasis on
+clarity, accessibility, and long-term maintainability.
+Designed and built a multi-state employee portal and scheduling platform still in active use, focusing on clear interaction
+patterns and reducing friction in day-to-day tasks.
+Led UX strategy, prototyping, and frontend development across projects, creating reusable UI patterns, documentation, and
+handoff materials to support future growth.
+
+IronClad, UI Developer
+
+01/2022 - 03/2022
+
+Contributed to early-stage product direction by creating wireframes and interaction flows that clarified requirements and
+aligned design and engineering.
+Documented layout decisions, accessibility considerations, and interaction patterns to establish a shared reference point for
+implementation.
+
+08/2021 - 01/2022
+
+Global Dimensions, Web Developer
+
+Built a custom scroll-driven timeline experience using Vue, GSAP, and CSS, translating a motion-heavy design into a smooth,
+performant interface.
+Developed reusable Vue components for geospatial workflows, with accessibility and clarity built into component behavior
+and structure.
+Documented UI patterns and interaction details to support consistency as the product evolved.
+
+AWARDS & RECOGNITION
+2024
+
+Platinum Award (Booz Allen Hamilton)
+
+Designed and built a registration and scheduling platform for a multi-day convention, creating a clear and reliable experience for
+session selection and on-site coordination.
+2023
+
+Gold Award (Booz Allen Hamilton)
+Designed and prototyped product concepts directly with clients, helping establish a clear direction and shared understanding
+before development.
+
+Gold Award (Booz Allen Hamilton)
+
+2022
+
+Led the redesign of a widely used internal application, improving usability and visual clarity and making the interface easier to
+navigate and understand.
+
+EDUCATION & CERTIFICATIONS
+George Washington University, 2020
+General Assembly, 2022
+
+Web Development Certification
+User Experience Design
+
+CompTIA, 2022
+
+Security+ (Active)
+
+PROJECTS & VOLUNTEER WORK
+No Whiteboard Jobs Dashboard - Side Project
+
+no-wb.org
+
+Designed and built a data-focused dashboard for exploring the Hiring Without Whiteboards dataset, with search, filtering,
+pagination, and responsive layouts that support real user workflows. Focused on clarity, usability, and consistent interaction
+patterns. Built with Astro, TypeScript, and Tailwind CSS, using AI-assisted workflows to support rapid iteration while maintaining
+code quality.
+
+By Astrid Beauty Salon - Freelance Client
+
+byastridbeautysalon.com/
+
+Designed and developed the salon’s website, then led a full refactor adding i18n support and improving accessibility, performance,
+and long-term maintainability. Focused on clear service pathways and a simple, approachable user experience.
+
+vvd - Contract
+
+vvd.world/
+
+Owned a core feature integrating a legacy system into a modern Next.js App Router codebase with Supabase and real-time
+collaboration via Yjs. Focused on creating a clear, usable interface over a complex data model. Introduced an AI-assisted
+development workflow to support prototyping and implementation from concept through PR.
+
+

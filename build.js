@@ -60,14 +60,18 @@ function buildPdfDefinition(data) {
   const { personal, summary, skills, experience, education, projects, awards } =
     data;
 
-  const contactComponents = [];
+  const primaryContactComponents = [];
+  const secondaryContactComponents = [];
   if (personal.location) {
-    contactComponents.push({ text: personal.location, color: "#333333" });
+    primaryContactComponents.push({
+      text: personal.location,
+      color: "#333333",
+    });
   }
   if (personal.phone) {
-    if (contactComponents.length)
-      contactComponents.push({ text: "  |  ", color: "#333333" });
-    contactComponents.push({
+    if (primaryContactComponents.length)
+      primaryContactComponents.push({ text: "  |  ", color: "#333333" });
+    primaryContactComponents.push({
       text: personal.phone,
       link: `tel:${personal.phone.replace(/[^\d+]/g, "")}`,
       color: "#333333",
@@ -75,9 +79,9 @@ function buildPdfDefinition(data) {
     });
   }
   if (personal.email) {
-    if (contactComponents.length)
-      contactComponents.push({ text: "  |  ", color: "#333333" });
-    contactComponents.push({
+    if (primaryContactComponents.length)
+      primaryContactComponents.push({ text: "  |  ", color: "#333333" });
+    primaryContactComponents.push({
       text: personal.email,
       link: `mailto:${personal.email}`,
       color: "#333333",
@@ -85,13 +89,13 @@ function buildPdfDefinition(data) {
     });
   }
   if (personal.website) {
-    if (contactComponents.length)
-      contactComponents.push({ text: "  |  ", color: "#333333" });
+    if (secondaryContactComponents.length)
+      secondaryContactComponents.push({ text: "  |  ", color: "#333333" });
     const websiteUrl = personal.website.match(/^https?:\/\//)
       ? personal.website
       : `https://${personal.website}`;
-    contactComponents.push({
-      text: "Portfolio",
+    secondaryContactComponents.push({
+      text: `Portfolio (${websiteUrl})`,
       link: websiteUrl,
       color: "#333333",
       decoration: "underline",
@@ -99,13 +103,13 @@ function buildPdfDefinition(data) {
   }
 
   if (personal.linkedin) {
-    if (contactComponents.length)
-      contactComponents.push({ text: "  |  ", color: "#333333" });
+    if (secondaryContactComponents.length)
+      secondaryContactComponents.push({ text: "  |  ", color: "#333333" });
     const linkedinUrl = personal.linkedin.match(/^https?:\/\//)
       ? personal.linkedin
       : `https://${personal.linkedin}`;
-    contactComponents.push({
-      text: "LinkedIn",
+    secondaryContactComponents.push({
+      text: `LinkedIn (${linkedinUrl})`,
       link: linkedinUrl,
       color: "#333333",
       decoration: "underline",
@@ -113,13 +117,13 @@ function buildPdfDefinition(data) {
   }
 
   if (personal.github) {
-    if (contactComponents.length)
-      contactComponents.push({ text: "  |  ", color: "#333333" });
+    if (secondaryContactComponents.length)
+      secondaryContactComponents.push({ text: "  |  ", color: "#333333" });
     const githubUrl = personal.github.match(/^https?:\/\//)
       ? personal.github
       : `https://${personal.github}`;
-    contactComponents.push({
-      text: "GitHub",
+    secondaryContactComponents.push({
+      text: `GitHub (${githubUrl})`,
       link: githubUrl,
       color: "#333333",
       decoration: "underline",
@@ -136,11 +140,21 @@ function buildPdfDefinition(data) {
     ],
     margin: [0, 0, 0, 0],
   });
-  content.push({
-    text: contactComponents,
-    style: "contact",
-    margin: [0, 0, 0, 14],
-  });
+  if (primaryContactComponents.length) {
+    content.push({
+      text: primaryContactComponents,
+      style: "contact",
+      margin: [0, 0, 0, 3],
+    });
+  }
+
+  if (secondaryContactComponents.length) {
+    content.push({
+      text: secondaryContactComponents,
+      style: "contact",
+      margin: [0, 0, 0, 14],
+    });
+  }
 
   content.push(sectionHeader("PROFESSIONAL SUMMARY"));
   content.push({ text: summary, style: "summary", margin: [0, 0, 0, 12] });

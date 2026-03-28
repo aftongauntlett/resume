@@ -14,34 +14,22 @@
           <div>
             {{personal.location}}
             <span class="contact-divider">|</span>
-            <a href="tel:{{tel personal.phone}}">{{personal.phone}}</a>
+            {{personal.phone}}
             <span class="contact-divider">|</span>
-            <a href="mailto:{{personal.email}}">{{personal.email}}</a>
+            {{personal.email}}
             {{#if personal.website}}
               <span class="contact-divider">|</span>
-              <a
-                href="https://{{personal.website}}"
-                target="_blank"
-              >Portfolio</a>
+              Portfolio ({{personal.website}})
+            {{/if}}
+            {{#if personal.linkedin}}
+              <span class="contact-divider">|</span>
+              LinkedIn ({{personal.linkedin}})
+            {{/if}}
+            {{#if personal.github}}
+              <span class="contact-divider">|</span>
+              GitHub ({{personal.github}})
             {{/if}}
           </div>
-          {{#if personal.linkedin}}
-            <div>
-              {{#if personal.linkedin}}
-                <a
-                  href="https://{{personal.linkedin}}"
-                  target="_blank"
-                >{{personal.linkedin}}</a>
-              {{/if}}
-              {{#if personal.github}}
-                <span class="contact-divider">|</span>
-                <a
-                  href="https://{{personal.github}}"
-                  target="_blank"
-                >{{personal.github}}</a>
-              {{/if}}
-            </div>
-          {{/if}}
         </div>
       </header>
 

@@ -9,6 +9,7 @@ Single-source resume workflow using `resumeData.json`.
 - Builder outputs:
   - `afton-gauntlett-resume.html`
   - `afton-gauntlett-resume.pdf`
+  - The PDF is built directly by pdfmake inside build.js and does not use resume.hbs. Changes to resume.hbs only affect the HTML preview file, not the PDF.
 
 ## Quick start
 
@@ -45,6 +46,7 @@ Check for:
 - page count stays at 2
 - section order is correct
 - no ligature breakage (`workflows`, `certification`, etc.)
+- pdftotext output is the source of truth for what ATS scanners will read — not the visual PDF in a browser
 - no trailing blank page
 
 ## Commit workflow
