@@ -19,10 +19,10 @@
           "dates": "03/2023 - 05/2025",
           "location": "Remote",
           "bullets": [
-            "Mentored frontend developers through code reviews and pair programming, reinforcing consistent patterns, accessibility practices, and thoughtful UI implementation across the team.",
-            "Collaborated with MLOps to deploy a locally-hosted LLM environment and led the redesign of the chatbot interface, focusing on clarity and ease of use in a sensitive domain.",
-            "Designed and built a stepper-driven data portal that replaced a manual Excel and email-based process, turning a fragmented workflow into a clear, guided user experience.",
-            "Established reusable component patterns and interaction guidelines that improved consistency across screens and reduced one-off implementations."
+            "Led frontend architecture for multiple production applications, introducing Storybook and shared frontend patterns that improved consistency and reduced redundant UI work as systems scaled.",
+            "Designed and delivered a stepper-driven data portal to replace a manual Excel and email process, streamlining a previously error-prone workflow and strengthening the proposal against competing bids on a high-value contract.",
+            "Worked with stakeholders and designers early in the process, using Figma-based workflows and lightweight prototypes to shape interaction and layout decisions before writing large amounts of code.",
+            "Built frontend interfaces and internal tooling for a secure LLM-powered chatbot, and authored workflows that enabled the team to use it for code assistance under compliance constraints."
           ]
         },
         {
@@ -101,8 +101,13 @@
     },
     {
       "title": "vvd - Contract",
-      "description": "Owned a core feature integrating a legacy system into a modern Next.js App Router codebase with Supabase and real-time collaboration via Yjs. Focused on creating a clear, usable interface over a complex data model. Introduced an AI-assisted development workflow to support prototyping and implementation from concept through PR.",
+      "description": "Owned a core feature integrating a legacy system into a modern Next.js App Router codebase with Supabase and real-time collaboration. Designed a clear, usable interface over a complex, shared data model, accounting for the constraints of collaborative state and user interactions. Leveraged AI-assisted workflows to rapidly prototype and ship production-ready solutions.",
       "urls": ["https://vvd.world/"]
+    },
+    {
+      "title": "Orbital Order — JS13k Competition",
+      "description": "A physics-based puzzle game inspired by the Aufbau principle. Designed around emergent behavior, requiring players to balance charge interactions, timing, and spatial positioning to reach stable configurations. Built with vanilla JavaScript and Canvas 2D under JS13k-style constraints, with a focus on tight mechanics, readable visual feedback, and efficient simulation.",
+      "urls": ["https://orbital-order.aftongauntlett.com/"]
     }
   ],
   "education": [

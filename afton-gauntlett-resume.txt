@@ -17,14 +17,10 @@ Lead Engineer
 
 03/2023 - 05/2025
 
-Mentored frontend developers through code reviews and pair programming, reinforcing consistent patterns, accessibility
-practices, and thoughtful UI implementation across the team.
-Collaborated with MLOps to deploy a locally-hosted LLM environment and led the redesign of the chatbot interface,
-focusing on clarity and ease of use in a sensitive domain.
-Designed and built a stepper-driven data portal that replaced a manual Excel and email-based process, turning a
-fragmented workflow into a clear, guided user experience.
-Established reusable component patterns and interaction guidelines that improved consistency across screens and
-reduced one-off implementations.
+Led frontend architecture for multiple production applications, introducing Storybook and shared frontend patterns that improved consistency and reduced redundant UI work as systems scaled.
+Designed and delivered a stepper-driven data portal to replace a manual Excel and email process, streamlining a previously error-prone workflow, reducing support tickets, and strengthening the proposal against competing bids on a high-value contract.
+Worked with stakeholders and designers early in the process, using Figma-based workflows and lightweight prototypes to shape interaction and layout decisions before writing large amounts of code.
+Built frontend interfaces and internal tooling for a secure LLM-powered chatbot, and authored workflows that enabled the team to use it for code assistance under compliance constraints.
 
 Software Engineer
 
@@ -124,3 +120,6 @@ collaboration via Yjs. Focused on creating a clear, usable interface over a comp
 development workflow to support prototyping and implementation from concept through PR.
 
 
+Nyx Felis & Lampyris — JS13k Competition
+
+Small interactive experience built with vanilla JavaScript, HTML, and Canvas for the JS13k Games competition. Explored timing and feedback through animation and sound, iterating directly in code to tune interaction behavior within a strict 13kb size and performance limit.
