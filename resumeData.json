@@ -9,7 +9,7 @@
     "github": "https://github.com/aftongauntlett",
     "website": "https://aftongauntlett.com"
   },
-  "summary": "Senior Frontend Developer with 6+ years of experience building accessible, user-focused applications. My work centers on design systems, component architecture, and translating complex product ideas into clear, usable interfaces. I’m especially focused on interaction quality, user experience, and making sure what we build holds up in real use.",
+  "summary": "Senior Frontend Developer with 6+ years building accessible, high-quality user interfaces. I specialize in design systems, component architecture, and translating complex product requirements into clear, usable experiences that hold up under real-world use.",
   "experience": [
     {
       "company": "Booz Allen Hamilton",
@@ -45,7 +45,7 @@
       "bullets": [
         "Founded a small web studio delivering design-focused products for small businesses and nonprofits, with an emphasis on clarity, accessibility, and long-term maintainability.",
         "Designed and built a multi-state employee portal and scheduling platform still in active use, focusing on clear interaction patterns and reducing friction in day-to-day tasks.",
-        "Led UX strategy, prototyping, and frontend development across projects, creating reusable UI patterns, documentation, and handoff materials to support future growth."
+        "Led UX strategy, prototyping, and frontend development across projects, established reusable UI patterns and documentation that reduced inconsistency and improved development speed across projects"
       ]
     },
     {
@@ -101,7 +101,7 @@
     },
     {
       "title": "vvd - Contract",
-      "description": "Owned a core feature integrating a legacy system into a modern Next.js App Router codebase with Supabase and real-time collaboration. Designed a clear, usable interface over a complex, shared data model, accounting for the constraints of collaborative state and user interactions. Leveraged AI-assisted workflows to rapidly prototype and ship production-ready solutions.",
+      "description": "Owned a core feature integrating a legacy system into a modern Next.js App Router codebase with Supabase and real-time collaboration. Designed a clear, usable interface over a complex, shared data model, accounting for the constraints of collaborative state and user interactions. Leveraged AI-assisted workflows to rapidly prototype, evaluate tradeoffs, and ship production-ready solutions.",
       "urls": ["https://vvd.world/"]
     },
     {
@@ -127,7 +127,7 @@
   ],
   "skills": {
     "Combined": [
-      "TypeScript • JavaScript • React • Next.js • Vue • Astro • Tailwind CSS • Framer Motion • GSAP • Figma • Storybook • TanStack Query • Supabase • PostgreSQL • Vercel • Jest • Vitest • Git • GitHub Copilot • Postman • Accessibility (WCAG, Section 508) • i18n"
+      "TypeScript • JavaScript • React • Next.js • Astro • Vue • Tailwind CSS • Framer Motion • GSAP • Three.js • Storybook • TanStack Query • Jest • Supabase • PostgreSQL • Git • Vercel • Accessibility (WCAG, Section 508)"
     ]
   }
 }
