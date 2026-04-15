@@ -3,9 +3,9 @@ Ashburn, VA 20147 | (571) 249-1952 | hello@aftongauntlett.com | Portfolio (https
 linkedin.com/in/afton-gauntlett/) | GitHub (https://github.com/aftongauntlett)
 
 PROFESSIONAL SUMMARY
-Senior Frontend Developer with 6+ years of experience building accessible, user-focused applications. My work centers on
-design systems, component architecture, and translating complex product ideas into clear, usable interfaces. I’m especially
-focused on interaction quality, user experience, and making sure what we build holds up in real use.
+Senior Frontend Developer with 6+ years building accessible interfaces that make complex workflows feel clear and human.
+I specialize in design systems, component architecture, and tight design-engineering collaboration, with a focus on
+thoughtful interaction details and products that hold up in real-world use.
 
 TECHNICAL SKILLS
 TypeScript • JavaScript • React • Next.js • Vue • Astro • Tailwind CSS • Framer Motion • GSAP • Figma • Storybook • TanStack Query •
@@ -104,22 +104,26 @@ pagination, and responsive layouts that support real user workflows. Focused on 
 patterns. Built with Astro, TypeScript, and Tailwind CSS, using AI-assisted workflows to support rapid iteration while maintaining
 code quality.
 
-By Astrid Beauty Salon - Freelance Client
+Ghostbusters Virginia — Community Website
 
-byastridbeautysalon.com/
+gbva-site.vercel.app/
 
-Designed and developed the salon’s website, then led a full refactor adding i18n support and improving accessibility, performance,
-and long-term maintainability. Focused on clear service pathways and a simple, approachable user experience.
+A full redesign and rebuild of the Ghostbusters Virginia community website, replacing a legacy WordPress setup with a modern
+static architecture. Includes an event calendar with countdowns, photo gallery, press coverage page, appearance request flow,
+and a donation meter. Built with Astro, React Islands, and Markdoc, with content and layout cleanly separated so the team can
+update copy independently of design.
 
-vvd - Contract
+Pretty Pretty Pretty Good - Freelance Studio
 
-vvd.world/
+prettyprettyprettygood.org/
 
-Owned a core feature integrating a legacy system into a modern Next.js App Router codebase with Supabase and real-time
-collaboration via Yjs. Focused on creating a clear, usable interface over a complex data model. Introduced an AI-assisted
-development workflow to support prototyping and implementation from concept through PR.
+A mission-driven freelance studio focused on custom websites for nonprofits, community organizations, artists, and values-aligned
+people. The model is access-first: free when funding is not available, and sliding-scale when clients can contribute. Built with
+Astro and deployed on Vercel, with Upstash Redis for lightweight serverless data features.
 
 
-Nyx Felis & Lampyris — JS13k Competition
+Siren Song Shop
 
-Small interactive experience built with vanilla JavaScript, HTML, and Canvas for the JS13k Games competition. Explored timing and feedback through animation and sound, iterating directly in code to tune interaction behavior within a strict 13kb size and performance limit.
+sirensongshop.com/
+
+A curated recommendation platform built as an editorial-first alternative to affiliate storefronts, where every listing is hand-vetted for trust, ethics, and practical usefulness. Includes structured content collections, admin-authenticated publishing workflows, accessible component architecture, and lightweight atmospheric motion that respects reduced-motion preferences. Built with Astro and TypeScript, with Keystatic-powered content modeling and validation via Zod.
