@@ -95,24 +95,6 @@
       "urls": ["https://no-wb.org"]
     },
     {
-      "title": "Ghostbusters Virginia — Community Website",
-      "description": "A full redesign and rebuild of the Ghostbusters Virginia community website, replacing a legacy WordPress setup with a modern static architecture. Includes an event calendar with countdowns, photo gallery, press coverage page, appearance request flow, and a donation meter. Built with Astro, React Islands, and Markdoc, with content and layout cleanly separated so the team can update copy independently of design.",
-      "tech": [
-        "Astro",
-        "TypeScript",
-        "React Islands",
-        "Markdoc",
-        "Vitest",
-        "Vercel"
-      ],
-      "link": "https://github.com/ghostbustersvirginia/ghostbustersva",
-      "demo": "https://gbva-site.vercel.app/",
-      "urls": [
-        "https://gbva-site.vercel.app/",
-        "https://github.com/ghostbustersvirginia/ghostbustersva"
-      ]
-    },
-    {
       "title": "Pretty Pretty Pretty Good - Freelance Studio",
       "status": "Production",
       "description": "A mission-driven freelance studio focused on custom websites for nonprofits, community organizations, artists, and values-aligned people. The model is access-first: free when funding is not available, and sliding-scale when clients can contribute. Built with Astro and deployed on Vercel, with Upstash Redis for lightweight serverless data features.",

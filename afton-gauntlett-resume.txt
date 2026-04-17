@@ -104,15 +104,6 @@ pagination, and responsive layouts that support real user workflows. Focused on 
 patterns. Built with Astro, TypeScript, and Tailwind CSS, using AI-assisted workflows to support rapid iteration while maintaining
 code quality.
 
-Ghostbusters Virginia — Community Website
-
-gbva-site.vercel.app/
-
-A full redesign and rebuild of the Ghostbusters Virginia community website, replacing a legacy WordPress setup with a modern
-static architecture. Includes an event calendar with countdowns, photo gallery, press coverage page, appearance request flow,
-and a donation meter. Built with Astro, React Islands, and Markdoc, with content and layout cleanly separated so the team can
-update copy independently of design.
-
 Pretty Pretty Pretty Good - Freelance Studio
 
 prettyprettyprettygood.org/
