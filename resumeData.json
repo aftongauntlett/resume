@@ -1,7 +1,7 @@
 {
   "personal": {
     "name": "Afton Gauntlett",
-    "title": "Senior Frontend Developer",
+    "title": "Senior Frontend Engineer",
     "email": "hello@aftongauntlett.com",
     "phone": "(571) 249-1952",
     "location": "Ashburn, VA 20147",
@@ -9,7 +9,7 @@
     "github": "https://github.com/aftongauntlett",
     "website": "https://aftongauntlett.com"
   },
-  "summary": "Senior Frontend Developer with 6+ years building accessible interfaces that make complex workflows feel clear and human. I specialize in design systems, component architecture, and tight design-engineering collaboration, with a focus on thoughtful interaction details and products that hold up in real-world use.",
+  "summary": "Senior Frontend Engineer with 6+ years building accessible, design-forward interfaces. I've led migrations, built design systems, and shipped under compliance constraints. I bring that same precision to fast-moving product teams that care about UI craft and interaction quality, built to WCAG standards and usable by default.",
   "experience": [
     {
       "company": "Booz Allen Hamilton",
@@ -31,7 +31,8 @@
           "location": "Remote",
           "bullets": [
             "Led an Angular-to-React migration with a focus on improving UI structure, component reuse, and long-term maintainability while preserving familiar user workflows.",
-            "Introduced shared frontend standards and tooling - Prettier, ESLint, Husky - and led a shift from class-based to functional components, adopting TanStack Query to make data and state handling more consistent and predictable across the UI.",
+            "Led Section 508 compliance efforts across production applications, establishing shared accessibility standards and patterns that made interfaces usable by default across the team.",
+            "Introduced shared frontend standards and tooling - Prettier, ESLint, Husky - and led a shift from class-based to functional components, adopting TanStack Query for consistent, predictable server state management across the UI.",
             "Authored onboarding guides and accessibility documentation, helping new developers understand system patterns and build interfaces that are usable by default."
           ]
         }
@@ -145,7 +146,7 @@
   ],
   "skills": {
     "Combined": [
-      "TypeScript • JavaScript • React • Next.js • Astro • Vue • Tailwind CSS • Framer Motion • GSAP • Three.js • Storybook • TanStack Query • Jest • Supabase • PostgreSQL • Git • Vercel • Accessibility (WCAG, Section 508)"
+      "TypeScript 5 • JavaScript • React 19 • Next.js • Astro • Vue • Tailwind CSS 4 • Framer Motion • GSAP • Three.js • Storybook • TanStack Query • TanStack Router • Jest • Supabase • PostgreSQL • Git • Vercel • Figma • OpenAPI • Swagger • WCAG 2.2 AA • Section 508"
     ]
   }
 }
