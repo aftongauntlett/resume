@@ -257,10 +257,7 @@ function buildPdfDefinition(data) {
     content.push(sectionHeader("PROJECTS & VOLUNTEER WORK"));
     projects.forEach((project, projectIndex) => {
       const isLastProject = projectIndex === projects.length - 1;
-      const url =
-        Array.isArray(project.urls) && project.urls.length
-          ? project.urls[0]
-          : null;
+      const url = project.link || null;
       const displayUrl = url
         ? url.replace(/^https?:\/\//, "").replace(/^www\./, "")
         : "";

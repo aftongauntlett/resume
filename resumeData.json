@@ -1,7 +1,7 @@
 {
   "personal": {
     "name": "Afton Gauntlett",
-    "title": "Senior Frontend Engineer",
+    "title": "Senior Software Engineer",
     "email": "hello@aftongauntlett.com",
     "phone": "(571) 249-1952",
     "location": "Ashburn, VA 20147",
@@ -9,7 +9,7 @@
     "github": "https://github.com/aftongauntlett",
     "website": "https://aftongauntlett.com"
   },
-  "summary": "Senior Frontend Engineer with 6+ years building accessible, design-forward interfaces. I've led migrations, built design systems, and shipped under compliance constraints. I bring that same precision to fast-moving product teams that care about UI craft and interaction quality, built to WCAG standards and usable by default.",
+  "summary": "Senior Software Engineer with 6+ years of professional experience designing and building user-focused web applications. Skilled in frontend architecture, UI design, and accessibility, with a track record of leading projects from concept to production.",
   "experience": [
     {
       "company": "Booz Allen Hamilton",
@@ -19,10 +19,10 @@
           "dates": "03/2023 - 05/2025",
           "location": "Remote",
           "bullets": [
-            "Led frontend architecture for multiple production applications, introducing Storybook and shared frontend patterns that improved consistency and reduced redundant UI work as systems scaled.",
+            "Led frontend architecture for multiple production applications, codifying shared frontend patterns and a component library in Storybook that improved consistency and reduced redundant UI work as systems scaled.",
             "Designed and delivered a stepper-driven data portal to replace a manual Excel and email process, streamlining a previously error-prone workflow and strengthening the proposal against competing bids on a high-value contract.",
             "Worked with stakeholders and designers early in the process, using Figma-based workflows and lightweight prototypes to shape interaction and layout decisions before writing large amounts of code.",
-            "Built frontend interfaces and internal tooling for a secure LLM-powered chatbot, and authored workflows that enabled the team to use it for code assistance under compliance constraints."
+            "Scoped and shipped a secure LLM-powered chatbot from prototype to production, building the frontend interfaces and internal tooling, and establishing AI-assisted workflows that accounted for model behavior under compliance constraints."
           ]
         },
         {
@@ -93,40 +93,17 @@
     {
       "title": "No Whiteboard Jobs Dashboard - Side Project",
       "description": "Designed and built a data-focused dashboard for exploring the Hiring Without Whiteboards dataset, with search, filtering, pagination, and responsive layouts that support real user workflows. Focused on clarity, usability, and consistent interaction patterns. Built with Astro, TypeScript, and Tailwind CSS, using AI-assisted workflows to support rapid iteration while maintaining code quality.",
-      "urls": ["https://no-wb.org"]
+      "link": "https://no-wb.org"
     },
     {
       "title": "Pretty Pretty Pretty Good - Freelance Studio",
-      "status": "Production",
       "description": "A mission-driven freelance studio focused on custom websites for nonprofits, community organizations, artists, and values-aligned people. The model is access-first: free when funding is not available, and sliding-scale when clients can contribute. Built with Astro and deployed on Vercel, with Upstash Redis for lightweight serverless data features.",
-      "tech": ["Astro", "TypeScript", "Upstash Redis", "Vercel"],
-      "link": "https://github.com/aftongauntlett/prettyprettyprettygood",
-      "demo": "https://www.prettyprettyprettygood.org/",
-      "external": true,
-      "urls": [
-        "https://www.prettyprettyprettygood.org/",
-        "https://github.com/aftongauntlett/prettyprettyprettygood"
-      ]
+      "link": "https://www.prettyprettyprettygood.org/"
     },
     {
-      "title": "Siren Song Shop",
-      "status": "Production",
-      "description": "A curated recommendation platform built as an editorial-first alternative to affiliate storefronts, where every listing is hand-vetted for trust, ethics, and practical usefulness. Includes structured content collections, admin-authenticated publishing workflows, accessible component architecture, and lightweight atmospheric motion that respects reduced-motion preferences. Built with Astro and TypeScript, with Keystatic-powered content modeling and validation via Zod.",
-      "tech": [
-        "Astro",
-        "TypeScript",
-        "Keystatic",
-        "Zod",
-        "React Islands",
-        "Vitest",
-        "Vercel"
-      ],
-      "link": "https://github.com/aftongauntlett/siren-song-shop",
-      "demo": "https://www.sirensongshop.com/",
-      "urls": [
-        "https://www.sirensongshop.com/",
-        "https://github.com/aftongauntlett/siren-song-shop"
-      ]
+      "title": "JS13K — Electron Orbital Puzzle",
+      "description": "A physics-based puzzle game where players guide electrons into atomic orbitals using electromagnetic attraction and repulsion, inspired by the Aufbau principle. Built around emergent behavior — balancing charge interactions, timing, and spatial positioning to reach stable configurations. Built with vanilla JavaScript and Canvas 2D under JS13k constraints, with a focus on tight mechanics and readable visual feedback.",
+      "link": "https://github.com/aftongauntlett/js13k-demo"
     }
   ],
   "education": [

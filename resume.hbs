@@ -131,13 +131,9 @@
             <div class="entry-item">
               <div class="entry-line">
                 <span class="entry-title"><b>{{title}}</b></span>
-                {{#if urls}}
+                {{#if link}}
                   <span class="entry-meta">
-                    {{#each urls}}
-                      <span class="entry-url">{{this}}</span>{{#unless @last}}
-                        |
-                      {{/unless}}
-                    {{/each}}
+                    <a href="{{link}}" target="_blank">{{link}}</a>
                   </span>
                 {{/if}}
               </div>
