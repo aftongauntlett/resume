@@ -49,10 +49,10 @@ function sectionHeader(text) {
             lineColor: "#2e2e2e",
           },
         ],
-        margin: [0, 1, 0, 8],
+        margin: [0, 2, 0, 10],
       },
     ],
-    margin: [0, 0, 0, 0],
+    margin: [0, 10, 0, 0],
   };
 }
 
@@ -157,7 +157,7 @@ function buildPdfDefinition(data) {
   }
 
   content.push(sectionHeader("PROFESSIONAL SUMMARY"));
-  content.push({ text: summary, style: "summary", margin: [0, 0, 0, 12] });
+  content.push({ text: summary, style: "summary", margin: [0, 0, 0, 14] });
 
   content.push(sectionHeader("TECHNICAL SKILLS"));
   const combinedSkills = Object.values(skills)
@@ -167,7 +167,7 @@ function buildPdfDefinition(data) {
   content.push({
     text: combinedSkills,
     style: "skillInline",
-    margin: [0, 0, 0, 8],
+    margin: [0, 0, 0, 12],
   });
 
   content.push(sectionHeader("EXPERIENCE"));
@@ -188,27 +188,33 @@ function buildPdfDefinition(data) {
         });
         content.push({
           ul: position.bullets,
-          margin: [18, 0, 0, 7],
+          margin: [18, 0, 0, 10],
           style: "bulletList",
         });
       });
     } else {
-      content.push({
-        columns: [
+      const entryNode = {
+        stack: [
           {
-            width: "*",
-            text: `${entry.company}, ${entry.title}`,
-            style: "company",
+            columns: [
+              {
+                width: "*",
+                text: `${entry.company}, ${entry.title}`,
+                style: "company",
+              },
+              { width: "auto", text: entry.dates, style: "date" },
+            ],
+            margin: [0, 0, 0, 2],
           },
-          { width: "auto", text: entry.dates, style: "date" },
+          {
+            ul: entry.bullets,
+            margin: [8, 0, 0, 10],
+            style: "bulletList",
+          },
         ],
-        margin: [0, 0, 0, 2],
-      });
-      content.push({
-        ul: entry.bullets,
-        margin: [8, 0, 0, 7],
-        style: "bulletList",
-      });
+      };
+      if (entry.pageBreakBefore) entryNode.pageBreak = "before";
+      content.push(entryNode);
     }
   });
 
@@ -225,7 +231,7 @@ function buildPdfDefinition(data) {
       content.push({
         text: award.details,
         style: "entryText",
-        margin: [0, 0, 0, 8],
+        margin: [0, 0, 0, 12],
       });
     });
   }
@@ -249,7 +255,7 @@ function buildPdfDefinition(data) {
         { width: "*", text: item.title, style: "company" },
         { width: "auto", text: detailsText },
       ],
-      margin: [0, 0, 0, 7],
+      margin: [0, 0, 0, 9],
     });
   });
 
@@ -280,7 +286,7 @@ function buildPdfDefinition(data) {
       content.push({
         text: project.description,
         style: "entryText",
-        margin: [0, 0, 0, isLastProject ? 0 : 6],
+        margin: [0, 0, 0, isLastProject ? 0 : 9],
       });
     });
   }
