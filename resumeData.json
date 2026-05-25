@@ -9,7 +9,7 @@
     "github": "https://github.com/aftongauntlett",
     "website": "https://aftongauntlett.com"
   },
-  "summary": "Frontend engineer with six years of experience in design systems, accessible UI, and component architecture. Led an Angular-to-React migration, built a multi-theme Storybook design system, and shipped production tooling at Booz Allen Hamilton — earning three internal awards and a spot representing the team at AWS re:Invent.",
+  "summary": "Frontend engineer with six years of professional experience in design systems, accessible UI, and component architecture. Led an Angular-to-React migration, built a multi-theme Storybook design system, and shipped production tooling at Booz Allen Hamilton — earning three internal awards and a spot representing the team at AWS re:Invent.",
   "experience": [
     {
       "company": "Booz Allen Hamilton",
@@ -21,7 +21,7 @@
           "bullets": [
             "Built and maintained a Storybook component library and multi-theme design system adopted across multiple production React applications, reducing redundant UI work and establishing shared patterns the whole team shipped from.",
             "Designed and delivered a stepper-driven data portal in close collaboration with stakeholders — using interactive prototypes to win buy-in over a competing proposal on a high-value contract.",
-            "Scoped and shipped a secure LLM-powered chatbot from prototype to production, building frontend interfaces and internal tooling within compliance and air-gap constraints."
+            "Identified and scoped an opportunity for a secure LLM-powered chatbot, coordinated with MLOps to stand up the low-side environment, and owned the frontend interface and UX polish from prototype through production."
           ]
         },
         {
@@ -32,6 +32,7 @@
             "Led an Angular-to-React migration focused on UI structure, component reuse, and long-term maintainability — establishing the design system and design workflows the team still uses.",
             "Owned Section 508 compliance across production applications, authoring shared accessibility standards and patterns that made interfaces usable by default.",
             "Introduced Prettier, ESLint, Husky, and TanStack Query — modernizing the frontend toolchain and shifting the team from class-based to functional components.",
+            "Supported QA team with smoke test authoring and test documentation; trained testers on Postman for API validation ahead of UI availability.",
             "Authored onboarding documentation and accessibility guides that reduced ramp-up time and made new developers productive faster."
           ]
         }
@@ -50,7 +51,6 @@
     },
     {
       "company": "IronClad",
-      "pageBreakBefore": true,
       "title": "UI Developer",
       "dates": "01/2022 - 03/2022",
       "location": "Remote",
@@ -66,7 +66,7 @@
       "location": "Springfield, Virginia",
       "bullets": [
         "Built a scroll-driven animated timeline for NGA analyst platforms using Vue, GSAP, and CSS — set as the visual reference standard for the project.",
-        "Translated motion-heavy design specs into accessible, performant components without sacrificing fidelity or performance."
+        "Translated motion-heavy design specs into accessible, performant components without sacrificing fidelity or performance, including hands-on JAWS screen reader testing during accessibility validation."
       ]
     }
   ],
@@ -121,7 +121,7 @@
   ],
   "skills": {
     "Combined": [
-      "React • TypeScript • JavaScript • Next.js • Astro • Vue • Tailwind CSS • Framer Motion • GSAP • Storybook • TanStack Query • Figma • Design Systems • WCAG 2.2 AA • Section 508 • Supabase • PostgreSQL • Vercel • Git • GitHub Copilot • Claude"
+      "TypeScript • JavaScript • React • Next.js • Astro • Vue • Tailwind CSS • Framer Motion • GSAP • Storybook • TanStack Query • Playwright • Jest • Figma • Design Systems • WCAG • Section 508 • Supabase • PostgreSQL • Vercel • Git • GitHub Copilot • Claude"
     ]
   }
 }

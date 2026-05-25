@@ -152,6 +152,11 @@ function getCoverLetterOrgSlug(coverLetterData) {
   return orgSlug;
 }
 
+function getCoverLetterRecipientLabel(coverLetterData) {
+  const recipientLabel = String(coverLetterData.recipientLabel || "").trim();
+  return recipientLabel || "Hiring Team,";
+}
+
 function buildHireProfileUrl(orgSlug) {
   const companyName = orgSlugToCompanyName(orgSlug);
   const companyUrlToken = companyName.replace(/\s+/g, "_");
@@ -498,8 +503,7 @@ function buildResumePdfDefinition(data) {
 
 function buildCoverLetterPdfDefinition(personal, coverLetterData) {
   const orgSlug = getCoverLetterOrgSlug(coverLetterData);
-  const companyName = orgSlugToCompanyName(orgSlug);
-  const salutation = `Dear ${companyName}`;
+  const recipientLabel = getCoverLetterRecipientLabel(coverLetterData);
   const headerContactComponents =
     buildCoverLetterHeaderContactComponents(personal);
   const { signatureLines } = buildCoverLetterSignature(personal, orgSlug);
@@ -524,9 +528,9 @@ function buildCoverLetterPdfDefinition(personal, coverLetterData) {
     });
   }
 
-  if (salutation) {
+  if (recipientLabel) {
     content.push({
-      text: salutation,
+      text: recipientLabel,
       style: "entryText",
       margin: [0, 0, 0, 12],
     });
@@ -614,8 +618,7 @@ async function buildCoverLetter() {
   const resumeData = loadJson(DEFAULT_RESUME_DATA_FILE);
   const coverLetterData = loadJson(DEFAULT_COVER_LETTER_DATA_FILE);
   const orgSlug = getCoverLetterOrgSlug(coverLetterData);
-  const companyName = orgSlugToCompanyName(orgSlug);
-  const salutation = `Dear ${companyName}`;
+  const recipientLabel = getCoverLetterRecipientLabel(coverLetterData);
   const { hireProfileUrl, hireProfileDisplay } = buildCoverLetterSignature(
     resumeData.personal,
     orgSlug,
@@ -630,7 +633,7 @@ async function buildCoverLetter() {
       orgSlug,
       hireProfileUrl,
       hireProfileDisplay,
-      recipientLabel: salutation,
+      recipientLabel,
       paragraphs: Array.isArray(coverLetterData.paragraphs)
         ? coverLetterData.paragraphs
         : [],
