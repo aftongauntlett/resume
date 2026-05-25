@@ -5,7 +5,8 @@
   "main": "build.js",
   "scripts": {
     "build": "node build.js",
-    "dev": "node build.js"
+    "dev": "node build.js",
+    "cover-letter": "node build.js cover-letter"
   },
   "repository": {
     "type": "git",

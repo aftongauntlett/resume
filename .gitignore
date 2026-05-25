@@ -26,3 +26,11 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.temp
+
+# Cover letter artifacts (private/local only)
+coverLetterData.json
+afton-gauntlett-cover-letter.pdf
+afton-gauntlett-cover-letter.html
+coverLetter.hbs
+docs/writing-guide.md
+docs/cover-letter-rules.md

@@ -20,6 +20,18 @@ npm run build
 
 `npm run dev` runs the same build command.
 
+## Cover letter workflow
+
+- Update `coverLetterData.json` with your drafted letter content.
+- `companyName` is required and must be explicitly set before building.
+- Run `npm run cover-letter`
+- Builder outputs:
+  - `afton-gauntlett-cover-letter.html`
+  - `afton-gauntlett-cover-letter.pdf`
+  - The PDF is copied to `~/Desktop/afton-gauntlett-cover-letter.pdf`
+
+If `companyName` is missing or still set to a placeholder, the cover letter build stops with an error and does not proceed.
+
 ## Updating your resume (simple workflow)
 
 ### Option A: Edit it yourself
