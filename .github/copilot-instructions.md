@@ -26,4 +26,5 @@ Cover letters are private. Do not suggest committing or pushing:
 - Always overwrite `coverLetterData.json` completely — never append or merge with prior content.
 - Never leave `[bracketed]` placeholder text in any field before building.
 - `coverLetterData.json` must include an `orgSlug` field (company name, lowercase, underscores for spaces).
+- Always set the salutation to `Dear {company_name} hiring team,` using the provided company name.
 - Do not write a generic closing sentence. The final paragraph is the close — write it as one direct, confident sentence.

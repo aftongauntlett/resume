@@ -152,9 +152,9 @@ function getCoverLetterOrgSlug(coverLetterData) {
   return orgSlug;
 }
 
-function getCoverLetterRecipientLabel(coverLetterData) {
-  const recipientLabel = String(coverLetterData.recipientLabel || "").trim();
-  return recipientLabel || "Hiring Team,";
+function getCoverLetterRecipientLabel(orgSlug) {
+  const companyName = orgSlugToCompanyName(orgSlug);
+  return `Dear ${companyName} hiring team,`;
 }
 
 function buildHireProfileUrl(orgSlug) {
@@ -503,7 +503,7 @@ function buildResumePdfDefinition(data) {
 
 function buildCoverLetterPdfDefinition(personal, coverLetterData) {
   const orgSlug = getCoverLetterOrgSlug(coverLetterData);
-  const recipientLabel = getCoverLetterRecipientLabel(coverLetterData);
+  const recipientLabel = getCoverLetterRecipientLabel(orgSlug);
   const headerContactComponents =
     buildCoverLetterHeaderContactComponents(personal);
   const { signatureLines } = buildCoverLetterSignature(personal, orgSlug);
@@ -618,7 +618,7 @@ async function buildCoverLetter() {
   const resumeData = loadJson(DEFAULT_RESUME_DATA_FILE);
   const coverLetterData = loadJson(DEFAULT_COVER_LETTER_DATA_FILE);
   const orgSlug = getCoverLetterOrgSlug(coverLetterData);
-  const recipientLabel = getCoverLetterRecipientLabel(coverLetterData);
+  const recipientLabel = getCoverLetterRecipientLabel(orgSlug);
   const { hireProfileUrl, hireProfileDisplay } = buildCoverLetterSignature(
     resumeData.personal,
     orgSlug,
