@@ -7,9 +7,9 @@ Single-source resume workflow using `resumeData.json`.
 - Edit content in `resumeData.json`
 - Run `npm run build`
 - Builder outputs:
-  - `afton-gauntlett-resume.html`
   - `afton-gauntlett-resume.pdf`
-  - The PDF is built directly by pdfmake inside build.js and does not use resume.hbs. Changes to resume.hbs only affect the HTML preview file, not the PDF.
+  - HTML preview files are disabled by default. Set `GENERATE_HTML_PREVIEW=1` when running a build if you explicitly want HTML output.
+  - The PDF is built directly by pdfmake inside build.js.
 
 ## Quick start
 
@@ -23,14 +23,13 @@ npm run build
 ## Cover letter workflow
 
 - Update `coverLetterData.json` with your drafted letter content.
-- `companyName` is required and must be explicitly set before building.
+- `orgSlug` is required and must be explicitly set before building.
 - Run `npm run cover-letter`
 - Builder outputs:
-  - `afton-gauntlett-cover-letter.html`
   - `afton-gauntlett-cover-letter.pdf`
   - The PDF is copied to `~/Desktop/afton-gauntlett-cover-letter.pdf`
 
-If `companyName` is missing or still set to a placeholder, the cover letter build stops with an error and does not proceed.
+If `orgSlug` is missing or still set to a placeholder, the cover letter build stops with an error and does not proceed.
 
 ## Updating your resume (simple workflow)
 

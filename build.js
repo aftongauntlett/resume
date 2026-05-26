@@ -9,6 +9,7 @@ const DEFAULT_COVER_LETTER_DATA_FILE = "coverLetterData.json";
 const RESUME_TEMPLATE_FILE = "resume.hbs";
 const COVER_LETTER_TEMPLATE_FILE = "coverLetter.hbs";
 const COVER_LETTER_BASE_NAME = "afton-gauntlett-cover-letter";
+const GENERATE_HTML_PREVIEW = process.env.GENERATE_HTML_PREVIEW === "1";
 
 Handlebars.registerHelper("tel", (str) => (str || "").replace(/[^\d+]/g, ""));
 
@@ -592,6 +593,13 @@ function generateHtml(templateFile, data, outputFile) {
   fs.writeFileSync(outputPath, html);
 }
 
+function removeFileIfExists(fileName) {
+  const filePath = path.resolve(__dirname, fileName);
+  if (fs.existsSync(filePath)) {
+    fs.rmSync(filePath);
+  }
+}
+
 function getResumeBaseName(inputFile) {
   const inputBase = path.basename(inputFile, path.extname(inputFile));
   return inputBase.startsWith("resumeData")
@@ -606,8 +614,12 @@ async function buildResume(inputFile = DEFAULT_RESUME_DATA_FILE) {
   const htmlFile = `${baseName}.html`;
   const pdfFile = `${baseName}.pdf`;
 
-  generateHtml(RESUME_TEMPLATE_FILE, resumeData, htmlFile);
-  console.log(`✅ ${htmlFile} generated for preview`);
+  if (GENERATE_HTML_PREVIEW) {
+    generateHtml(RESUME_TEMPLATE_FILE, resumeData, htmlFile);
+    console.log(`✅ ${htmlFile} generated for preview`);
+  } else {
+    removeFileIfExists(htmlFile);
+  }
 
   const docDefinition = buildResumePdfDefinition(safeData);
   await generatePdf(docDefinition, pdfFile);
@@ -626,21 +638,25 @@ async function buildCoverLetter() {
   const htmlFile = `${COVER_LETTER_BASE_NAME}.html`;
   const pdfFile = `${COVER_LETTER_BASE_NAME}.pdf`;
 
-  generateHtml(
-    COVER_LETTER_TEMPLATE_FILE,
-    {
-      personal: resumeData.personal,
-      orgSlug,
-      hireProfileUrl,
-      hireProfileDisplay,
-      recipientLabel,
-      paragraphs: Array.isArray(coverLetterData.paragraphs)
-        ? coverLetterData.paragraphs
-        : [],
-    },
-    htmlFile,
-  );
-  console.log(`✅ ${htmlFile} generated for preview`);
+  if (GENERATE_HTML_PREVIEW) {
+    generateHtml(
+      COVER_LETTER_TEMPLATE_FILE,
+      {
+        personal: resumeData.personal,
+        orgSlug,
+        hireProfileUrl,
+        hireProfileDisplay,
+        recipientLabel,
+        paragraphs: Array.isArray(coverLetterData.paragraphs)
+          ? coverLetterData.paragraphs
+          : [],
+      },
+      htmlFile,
+    );
+    console.log(`✅ ${htmlFile} generated for preview`);
+  } else {
+    removeFileIfExists(htmlFile);
+  }
 
   const docDefinition = buildCoverLetterPdfDefinition(
     resumeData.personal,

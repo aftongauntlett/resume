@@ -89,19 +89,19 @@
   ],
   "projects": [
     {
-      "title": "No Whiteboard Jobs Dashboard - Side Project",
-      "description": "Job search dashboard built on the Hiring Without Whiteboards dataset — full-text search, filtering, pagination, and responsive layouts. Astro, TypeScript, Tailwind CSS.",
+      "title": "no-wb.org",
+      "description": "Job search dashboard built on the Hiring Without Whiteboards dataset. Watches the upstream repo for merged PRs via GitHub Actions, pulls the latest data on merge, and writes to static JSON — no database, no server. Full-text search, filtering, pagination. Astro, TypeScript, Tailwind CSS.",
       "link": "https://no-wb.org"
     },
     {
-      "title": "Pretty Pretty Pretty Good - Freelance Studio",
-      "description": "Access-first freelance studio delivering custom sites for nonprofits and community organizations — free or sliding-scale. Astro, Vercel, Upstash Redis.",
-      "link": "https://www.prettyprettyprettygood.org/"
+      "title": "Orbital Order (JS13k)",
+      "description": "Physics-based puzzle game built under a 13KB size constraint. Vanilla JavaScript, Canvas 2D, Web Audio API. Emergent charge mechanics inspired by the Aufbau principle. No frameworks, no libraries.",
+      "link": "https://github.com/aftongauntlett/js13k-demo"
     },
     {
-      "title": "JS13K — Electron Orbital Puzzle",
-      "description": "Physics-based puzzle game built under the 13KB JS13k size constraint. Emergent charge mechanics using vanilla JavaScript and Canvas 2D.",
-      "link": "https://github.com/aftongauntlett/js13k-demo"
+      "title": "Pretty Pretty Pretty Good",
+      "description": "Sliding-scale web studio for nonprofits. I take clients from zero to a live production site solo — scope, architecture, design, build, deployment. Astro, Vercel, Upstash Redis.",
+      "link": "https://www.prettyprettyprettygood.org/"
     }
   ],
   "education": [
