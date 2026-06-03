@@ -153,15 +153,24 @@ function getCoverLetterOrgSlug(coverLetterData) {
   return orgSlug;
 }
 
-function getCoverLetterRecipientLabel(orgSlug) {
-  const companyName = orgSlugToCompanyName(orgSlug);
+function normalizeCompanyName(value) {
+  return String(value || "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function getCoverLetterCompanyName(coverLetterData, orgSlug) {
+  const explicitCompanyName = normalizeCompanyName(coverLetterData.companyName);
+  return explicitCompanyName || orgSlugToCompanyName(orgSlug);
+}
+
+function getCoverLetterRecipientLabel(coverLetterData, orgSlug) {
+  const companyName = getCoverLetterCompanyName(coverLetterData, orgSlug);
   return `Dear ${companyName} hiring team,`;
 }
 
 function buildHireProfileUrl(orgSlug) {
-  const companyName = orgSlugToCompanyName(orgSlug);
-  const companyUrlToken = companyName.replace(/\s+/g, "_");
-  return `https://hire.aftongauntlett.com/for/${encodeURIComponent(companyUrlToken)}`;
+  return `https://hire.aftongauntlett.com/for/${encodeURIComponent(orgSlug)}`;
 }
 
 function normalizeWebUrl(url) {
@@ -230,9 +239,7 @@ function buildCoverLetterHeaderContactComponents(personal) {
 }
 
 function buildCoverLetterSignature(personal, orgSlug) {
-  const companyName = orgSlugToCompanyName(orgSlug);
-  const companyUrlToken = companyName.replace(/\s+/g, "_");
-  const hireProfileDisplay = `hire.aftongauntlett.com/for/${companyUrlToken}`;
+  const hireProfileDisplay = `hire.aftongauntlett.com/for/${orgSlug}`;
   const linkedinDisplay = toPlainLinkText(personal.linkedin);
   const linkedinUrl = normalizeWebUrl(personal.linkedin);
   const githubDisplay = toPlainLinkText(personal.github);
@@ -386,15 +393,20 @@ function buildResumePdfDefinition(data) {
         });
       });
     } else {
+      const companyTitleNode = entry.link
+        ? {
+            text: `${entry.company}, ${entry.title}`,
+            style: "company",
+            link: entry.link,
+            decoration: "underline",
+            color: "#111111",
+          }
+        : { text: `${entry.company}, ${entry.title}`, style: "company" };
       const entryNode = {
         stack: [
           {
             columns: [
-              {
-                width: "*",
-                text: `${entry.company}, ${entry.title}`,
-                style: "company",
-              },
+              { width: "*", ...companyTitleNode },
               { width: "auto", text: entry.dates, style: "date" },
             ],
             margin: [0, 0, 0, 2],
@@ -504,7 +516,7 @@ function buildResumePdfDefinition(data) {
 
 function buildCoverLetterPdfDefinition(personal, coverLetterData) {
   const orgSlug = getCoverLetterOrgSlug(coverLetterData);
-  const recipientLabel = getCoverLetterRecipientLabel(orgSlug);
+  const recipientLabel = getCoverLetterRecipientLabel(coverLetterData, orgSlug);
   const headerContactComponents =
     buildCoverLetterHeaderContactComponents(personal);
   const { signatureLines } = buildCoverLetterSignature(personal, orgSlug);
@@ -630,7 +642,7 @@ async function buildCoverLetter() {
   const resumeData = loadJson(DEFAULT_RESUME_DATA_FILE);
   const coverLetterData = loadJson(DEFAULT_COVER_LETTER_DATA_FILE);
   const orgSlug = getCoverLetterOrgSlug(coverLetterData);
-  const recipientLabel = getCoverLetterRecipientLabel(orgSlug);
+  const recipientLabel = getCoverLetterRecipientLabel(coverLetterData, orgSlug);
   const { hireProfileUrl, hireProfileDisplay } = buildCoverLetterSignature(
     resumeData.personal,
     orgSlug,

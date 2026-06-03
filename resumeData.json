@@ -12,6 +12,18 @@
   "summary": "Frontend engineer with six years of professional experience in design systems, accessible UI, and component architecture. Led an Angular-to-React migration, built a multi-theme Storybook design system, and shipped production tooling at Booz Allen Hamilton — earning three internal awards and a spot representing the team at AWS re:Invent.",
   "experience": [
     {
+      "company": "Pretty Pretty Pretty Good",
+      "link": "https://www.prettyprettyprettygood.org/",
+      "title": "Founder",
+      "dates": "01/2025 - Present",
+      "location": "Remote",
+      "bullets": [
+        "Founded a sliding-scale web studio serving nonprofits and small businesses — sole point of contact from engagement to launch, owning scope, architecture, design, build, and deployment.",
+        "Operates on a sliding-scale pricing model to keep production-quality web work accessible to mission-driven organizations with limited budgets.",
+        "Selects stack to fit project scope — Astro for static-first sites, React or Next.js with Supabase when the work calls for it — always optimizing for speed, low overhead, and easy client handoff."
+      ]
+    },
+    {
       "company": "Booz Allen Hamilton",
       "positions": [
         {
@@ -19,8 +31,8 @@
           "dates": "03/2023 - 05/2025",
           "location": "Remote",
           "bullets": [
-            "Built and maintained a Storybook component library and multi-theme design system adopted across multiple production React applications, reducing redundant UI work and establishing shared patterns the whole team shipped from.",
-            "Designed and delivered a stepper-driven data portal in close collaboration with stakeholders — using interactive prototypes to win buy-in over a competing proposal on a high-value contract.",
+            "Built and maintained a multi-theme Storybook design system and component library across multiple production React applications — including a convention registration platform used by 100+ attendees (Booz Allen Platinum Award) — reducing redundant UI work and establishing shared patterns the whole team shipped from.",
+            "Designed and delivered a stepper-driven data portal in close collaboration with stakeholders — interactive prototypes won buy-in over a competing proposal, directly influencing a multi-year contract award and earning a Booz Allen Gold Award.",
             "Identified and scoped an opportunity for a secure LLM-powered chatbot, coordinated with MLOps to stand up the low-side environment, and owned the frontend interface and UX polish from prototype through production."
           ]
         },
@@ -29,7 +41,7 @@
           "dates": "03/2022 - 03/2023",
           "location": "Remote",
           "bullets": [
-            "Led an Angular-to-React migration focused on UI structure, component reuse, and long-term maintainability — establishing the design system and design workflows the team still uses.",
+            "Led an Angular-to-React migration focused on UI structure, component reuse, and long-term maintainability — establishing the design system and workflows the team still uses; the redesigned application earned recognition from Amazon developers at AWS re:Invent and a Booz Allen Gold Award.",
             "Owned Section 508 compliance across production applications, authoring shared accessibility standards and patterns that made interfaces usable by default.",
             "Introduced Prettier, ESLint, Husky, and TanStack Query — modernizing the frontend toolchain and shifting the team from class-based to functional components.",
             "Supported QA team with smoke test authoring and test documentation; trained testers on Postman for API validation ahead of UI availability.",
@@ -41,7 +53,7 @@
     {
       "company": "Gauntlet Designs",
       "title": "Founder",
-      "dates": "01/2020 - Present (Freelance)",
+      "dates": "01/2020 - 01/2025",
       "location": "Remote",
       "bullets": [
         "Founded a full-stack web studio delivering accessible, production-ready sites for small businesses and nonprofits, leading projects from scope through deployment.",
@@ -70,23 +82,6 @@
       ]
     }
   ],
-  "awards": [
-    {
-      "title": "Platinum Award (Booz Allen Hamilton)",
-      "year": "2024",
-      "details": "Built a convention registration and scheduling platform used by 100+ attendees for session sign-ups and on-site coordination."
-    },
-    {
-      "title": "Gold Award (Booz Allen Hamilton)",
-      "year": "2023",
-      "details": "Prototyped competing design directions for stakeholder review — the selected direction directly influenced a multi-year contract award."
-    },
-    {
-      "title": "Gold Award (Booz Allen Hamilton)",
-      "year": "2022",
-      "details": "Redesigned a high-visibility internal application; improved usability earned recognition from Amazon developers at AWS re:Invent."
-    }
-  ],
   "projects": [
     {
       "title": "no-wb.org",
@@ -96,12 +91,12 @@
     {
       "title": "Orbital Order (JS13k)",
       "description": "Physics-based puzzle game built under a 13KB size constraint. Vanilla JavaScript, Canvas 2D, Web Audio API. Emergent charge mechanics inspired by the Aufbau principle. No frameworks, no libraries.",
-      "link": "https://github.com/aftongauntlett/js13k-demo"
+      "link": "https://orbital-order.aftongauntlett.com/"
     },
     {
-      "title": "Pretty Pretty Pretty Good",
-      "description": "Sliding-scale web studio for nonprofits. I take clients from zero to a live production site solo — scope, architecture, design, build, deployment. Astro, Vercel, Upstash Redis.",
-      "link": "https://www.prettyprettyprettygood.org/"
+      "title": "NPC Finder",
+      "description": "Invite-only full-stack media tracker and playlist app. Supabase Auth, PostgreSQL with row-level security, and role-based sharing keep data isolated per user while still supporting collaborative lists. React 19, TypeScript, Tailwind CSS, TanStack Query, Supabase, PostgreSQL, Vercel.",
+      "link": "https://www.npcfinder.com/"
     }
   ],
   "education": [
