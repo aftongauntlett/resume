@@ -4,7 +4,7 @@
     "title": "Frontend Engineer",
     "email": "hello@aftongauntlett.com",
     "phone": "(571) 249-1952",
-    "location": "Ashburn, VA 20147",
+    "location": "Silver Spring, MD - US",
     "linkedin": "https://linkedin.com/in/afton-gauntlett/",
     "github": "https://github.com/aftongauntlett",
     "website": "https://aftongauntlett.com"
@@ -19,8 +19,9 @@
       "location": "Remote",
       "bullets": [
         "Founded a sliding-scale web studio serving nonprofits and small businesses — sole point of contact from engagement to launch, owning scope, architecture, design, build, and deployment.",
-        "Operates on a sliding-scale pricing model to keep production-quality web work accessible to mission-driven organizations with limited budgets.",
-        "Selects stack to fit project scope — Astro for static-first sites, React or Next.js with Supabase when the work calls for it — always optimizing for speed, low overhead, and easy client handoff."
+        "Operate on a sliding-scale pricing model to keep production-quality web work accessible to mission-driven organizations with limited budgets.",
+        "Select stack to fit project scope — Astro for static-first sites, React or Next.js with Supabase when the work calls for it — always optimizing for speed, low overhead, and easy client handoff.",
+        "Hold every build to WCAG standards, screen-reader and keyboard-nav tested, mobile-first, with 100 Lighthouse scores."
       ]
     },
     {
@@ -31,7 +32,8 @@
           "dates": "03/2023 - 05/2025",
           "location": "Remote",
           "bullets": [
-            "Built and maintained a multi-theme Storybook design system and component library across multiple production React applications — including a convention registration platform used by 100+ attendees (Booz Allen Platinum Award) — reducing redundant UI work and establishing shared patterns the whole team shipped from.",
+            "Promoted to Lead Engineer within a year, owning frontend architecture across a portfolio of security-critical applications.",
+            "Built and maintained a multi-theme Storybook design system and component library — including a convention registration platform used by 100+ attendees (Booz Allen Platinum Award) — and established the design practice from scratch with Figma training, team licenses, and production-ready workflows the whole team adopted.",
             "Designed and delivered a stepper-driven data portal in close collaboration with stakeholders — interactive prototypes won buy-in over a competing proposal, directly influencing a multi-year contract award and earning a Booz Allen Gold Award.",
             "Identified and scoped an opportunity for a secure LLM-powered chatbot, coordinated with MLOps to stand up the low-side environment, and owned the frontend interface and UX polish from prototype through production."
           ]
@@ -53,7 +55,7 @@
     {
       "company": "Gauntlet Designs",
       "title": "Founder",
-      "dates": "01/2020 - 01/2025",
+      "dates": "07/2020 - 01/2025",
       "location": "Remote",
       "bullets": [
         "Founded a full-stack web studio delivering accessible, production-ready sites for small businesses and nonprofits, leading projects from scope through deployment.",
@@ -64,7 +66,7 @@
     {
       "company": "IronClad",
       "title": "UI Developer",
-      "dates": "01/2022 - 03/2022",
+      "dates": "12/2021 - 03/2022",
       "location": "Remote",
       "bullets": [
         "Delivered wireframes and interaction specs that defined the React component architecture for Defense Intelligence Agency web applications.",
@@ -73,12 +75,12 @@
     },
     {
       "company": "Global Dimensions",
-      "title": "Web Developer",
-      "dates": "08/2021 - 01/2022",
+      "title": "Frontend Developer",
+      "dates": "08/2021 - 12/2021",
       "location": "Springfield, Virginia",
       "bullets": [
         "Built a scroll-driven animated timeline for NGA analyst platforms using Vue, GSAP, and CSS — set as the visual reference standard for the project.",
-        "Translated motion-heavy design specs into accessible, performant components without sacrificing fidelity or performance, including hands-on JAWS screen reader testing during accessibility validation."
+        "Translated motion-heavy design specs into accessible, high-fidelity components without sacrificing performance, including hands-on JAWS screen reader testing during accessibility validation."
       ]
     }
   ],
@@ -89,9 +91,9 @@
       "link": "https://no-wb.org"
     },
     {
-      "title": "Orbital Order (JS13k)",
-      "description": "Physics-based puzzle game built under a 13KB size constraint. Vanilla JavaScript, Canvas 2D, Web Audio API. Emergent charge mechanics inspired by the Aufbau principle. No frameworks, no libraries.",
-      "link": "https://orbital-order.aftongauntlett.com/"
+      "title": "GAM[fest]",
+      "description": "Marketing site for a gaming event, built with Astro and React islands — static-first, with hydration limited to the gallery, FAQ, and a hero mini-game. That hero banner hides a real Canvas2D/Matter.js platformer with gravity, collision, sprite animation, and a real-time day/night cycle. Fully keyboard-navigable, with reduced-motion fallbacks, an accessible alternative to the canvas game, and axe-core/Playwright test coverage. Astro, React, Matter.js, Playwright.",
+      "link": "https://gamfest-demo.vercel.app/"
     },
     {
       "title": "NPC Finder",
@@ -102,7 +104,7 @@
   "education": [
     {
       "title": "George Washington University, 2020",
-      "details": "Web Development Certification"
+      "details": "Full-Stack Web Development"
     },
     {
       "title": "General Assembly, 2022",
