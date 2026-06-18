@@ -441,29 +441,6 @@ function buildResumePdfDefinition(data) {
     });
   }
 
-  content.push(sectionHeader("EDUCATION & CERTIFICATIONS"));
-  education.forEach((item) => {
-    const detailsText = [{ text: item.details, style: "date" }];
-    if (item.url) {
-      detailsText.push({ text: " ", style: "date" });
-      detailsText.push({
-        text: "(Active)",
-        style: "date",
-        link: item.url,
-        decoration: "underline",
-        color: "#555555",
-      });
-    }
-
-    content.push({
-      columns: [
-        { width: "*", text: item.title, style: "company" },
-        { width: "auto", text: detailsText },
-      ],
-      margin: [0, 0, 0, 9],
-    });
-  });
-
   if (projects && projects.length) {
     content.push(sectionHeader("PROJECTS & VOLUNTEER WORK"));
     projects.forEach((project, projectIndex) => {
@@ -495,6 +472,29 @@ function buildResumePdfDefinition(data) {
       });
     });
   }
+
+  content.push(sectionHeader("EDUCATION & CERTIFICATIONS"));
+  education.forEach((item) => {
+    const detailsText = [{ text: item.details, style: "date" }];
+    if (item.url) {
+      detailsText.push({ text: " ", style: "date" });
+      detailsText.push({
+        text: "(Active)",
+        style: "date",
+        link: item.url,
+        decoration: "underline",
+        color: "#555555",
+      });
+    }
+
+    content.push({
+      columns: [
+        { width: "*", text: item.title, style: "company" },
+        { width: "auto", text: detailsText },
+      ],
+      margin: [0, 0, 0, 9],
+    });
+  });
 
   return {
     info: {

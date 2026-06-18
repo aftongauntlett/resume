@@ -18,10 +18,9 @@
       "dates": "01/2025 - Present",
       "location": "Remote",
       "bullets": [
-        "Founded a sliding-scale web studio serving nonprofits and small businesses — sole point of contact from engagement to launch, owning scope, architecture, design, build, and deployment.",
-        "Operate on a sliding-scale pricing model to keep production-quality web work accessible to mission-driven organizations with limited budgets.",
-        "Select stack to fit project scope — Astro for static-first sites, React or Next.js with Supabase when the work calls for it — always optimizing for speed, low overhead, and easy client handoff.",
-        "Hold every build to WCAG standards, screen-reader and keyboard-nav tested, mobile-first, with 100 Lighthouse scores."
+        "Founded a sliding-scale web studio for nonprofits and small businesses — sole point of contact from scope through deployment, keeping production-quality work accessible to mission-driven organizations with limited budgets.",
+        "Aim for 100 Lighthouse scores across builds, with WCAG compliance and screen-reader/keyboard-nav testing, mobile-first by default.",
+        "Select stack to fit project scope — Astro for static-first sites, React or Next.js with Supabase when the work calls for it — optimizing for speed and easy client handoff."
       ]
     },
     {
@@ -33,7 +32,7 @@
           "location": "Remote",
           "bullets": [
             "Promoted to Lead Engineer within a year, owning frontend architecture across a portfolio of security-critical applications.",
-            "Built and maintained a multi-theme Storybook design system and component library — including a convention registration platform used by 100+ attendees (Booz Allen Platinum Award) — and established the design practice from scratch with Figma training, team licenses, and production-ready workflows the whole team adopted.",
+            "Accelerated UI development by building a multi-theme Storybook design system and component library — including a convention registration platform used by 100+ attendees (Booz Allen Platinum Award) — and established the design practice from scratch with Figma training and team workflows.",
             "Designed and delivered a stepper-driven data portal in close collaboration with stakeholders — interactive prototypes won buy-in over a competing proposal, directly influencing a multi-year contract award and earning a Booz Allen Gold Award.",
             "Identified and scoped an opportunity for a secure LLM-powered chatbot, coordinated with MLOps to stand up the low-side environment, and owned the frontend interface and UX polish from prototype through production."
           ]
@@ -43,11 +42,10 @@
           "dates": "03/2022 - 03/2023",
           "location": "Remote",
           "bullets": [
-            "Led an Angular-to-React migration focused on UI structure, component reuse, and long-term maintainability — establishing the design system and workflows the team still uses; the redesigned application earned recognition from Amazon developers at AWS re:Invent and a Booz Allen Gold Award.",
+            "Led an Angular-to-React migration, establishing the design system and workflows the team still uses; the redesigned application earned recognition from Amazon developers at AWS re:Invent and a Booz Allen Gold Award.",
             "Owned Section 508 compliance across production applications, authoring shared accessibility standards and patterns that made interfaces usable by default.",
             "Introduced Prettier, ESLint, Husky, and TanStack Query — modernizing the frontend toolchain and shifting the team from class-based to functional components.",
-            "Supported QA team with smoke test authoring and test documentation; trained testers on Postman for API validation ahead of UI availability.",
-            "Authored onboarding documentation and accessibility guides that reduced ramp-up time and made new developers productive faster."
+            "Supported QA team with smoke test authoring and test documentation; trained testers on Postman for API validation ahead of UI availability."
           ]
         }
       ]
@@ -59,8 +57,8 @@
       "location": "Remote",
       "bullets": [
         "Founded a full-stack web studio delivering accessible, production-ready sites for small businesses and nonprofits, leading projects from scope through deployment.",
-        "Designed and built a multi-state employee portal and scheduling platform for a major restaurant franchise, still in active use after five years.",
-        "Established reusable component patterns and documentation across all client projects, reducing inconsistency and improving handoff."
+        "Designed and built a multi-state employee portal and scheduling platform for Potomac Family Dining Group — a restaurant franchise with 1,000+ employees across its locations — still in active use after five years.",
+        "Handled the full scope of running a client-facing studio — user research, wireframing, branding, SEO, and outreach — alongside design and development."
       ]
     },
     {
@@ -87,12 +85,12 @@
   "projects": [
     {
       "title": "no-wb.org",
-      "description": "Job search dashboard built on the Hiring Without Whiteboards dataset. Watches the upstream repo for merged PRs via GitHub Actions, pulls the latest data on merge, and writes to static JSON — no database, no server. Full-text search, filtering, pagination. Astro, TypeScript, Tailwind CSS.",
+      "description": "Job search dashboard built on the Hiring Without Whiteboards dataset. Includes an on-demand GitHub Actions workflow and sync script to pull upstream README data into static JSON. No database or server. Full-text search, filtering, pagination. Astro, TypeScript, Tailwind CSS.",
       "link": "https://no-wb.org"
     },
     {
       "title": "GAM[fest]",
-      "description": "Marketing site for a gaming event, built with Astro and React islands — static-first, with hydration limited to the gallery, FAQ, and a hero mini-game. That hero banner hides a real Canvas2D/Matter.js platformer with gravity, collision, sprite animation, and a real-time day/night cycle. Fully keyboard-navigable, with reduced-motion fallbacks, an accessible alternative to the canvas game, and axe-core/Playwright test coverage. Astro, React, Matter.js, Playwright.",
+      "description": "Marketing site for a gaming event, built with Astro and React islands — static-first, with hydration limited to the gallery, FAQ, and a hero mini-game. The hero banner hides a real Canvas2D/Matter.js platformer with gravity, collision, sprite animation, and a real-time day/night cycle. Fully keyboard-navigable, with reduced-motion fallbacks, an accessible alternative to the canvas game, and axe-core/Playwright test coverage. Astro, React, Matter.js, Playwright.",
       "link": "https://gamfest-demo.vercel.app/"
     },
     {

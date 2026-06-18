@@ -104,6 +104,25 @@
         {{/each}}
       </section>
 
+      {{#if projects.length}}
+        <section class="section">
+          <h2 class="section-title">Projects & Volunteer Work</h2>
+          {{#each projects}}
+            <div class="entry-item">
+              <div class="entry-line">
+                <span class="entry-title"><b>{{title}}</b></span>
+                {{#if link}}
+                  <span class="entry-meta">
+                    <a href="{{link}}" target="_blank">{{link}}</a>
+                  </span>
+                {{/if}}
+              </div>
+              <div class="entry-desc">{{{description}}}</div>
+            </div>
+          {{/each}}
+        </section>
+      {{/if}}
+
       <section class="section">
         <h2 class="section-title">Education & Certifications</h2>
         {{#each education}}
@@ -123,25 +142,6 @@
           </div>
         {{/each}}
       </section>
-
-      {{#if projects.length}}
-        <section class="section">
-          <h2 class="section-title">Projects & Volunteer Work</h2>
-          {{#each projects}}
-            <div class="entry-item">
-              <div class="entry-line">
-                <span class="entry-title"><b>{{title}}</b></span>
-                {{#if link}}
-                  <span class="entry-meta">
-                    <a href="{{link}}" target="_blank">{{link}}</a>
-                  </span>
-                {{/if}}
-              </div>
-              <div class="entry-desc">{{{description}}}</div>
-            </div>
-          {{/each}}
-        </section>
-      {{/if}}
     </div>
   </body>
 </html>
